@@ -1,0 +1,654 @@
+@import "common.scss";
+
+.banner-section.page {
+    @include Responsive(SM) {
+        min-height: 180px;
+    }
+}
+.section-message {
+    width: 100%;
+    position: relative;
+    background-color: $color_blue_5;
+    padding: 80px 0 110px;
+    &.thank-you-referral {
+        padding-bottom: 200px;
+    }
+    @include Responsive(SM) {
+        padding: 80px 0 100px;
+    }
+    @include Responsive(XS) {
+        padding: 50px 0;
+    }
+    .box-message {
+        width: 672px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 32px;
+        text-align: center;
+        position: relative;
+        @include Responsive(SM) {
+            width: 90%;
+            padding: 32px 0;
+        }
+
+        .planet {
+            position: absolute;
+            content: "";
+            top: -24%;
+            right: -11%;
+            @include Responsive(MD) {
+                top: -22%;
+                right: 1%;
+                width: 10%;
+            }
+            @include Responsive(SM) {
+                width: 55.2px;
+                top: -16%;
+            }
+            @include Responsive(X48) {
+                top: -10%;
+            }
+        }
+        .bigstar {
+            position: absolute;
+            content: "";
+            bottom: -14%;
+            left: -4%;
+            @include Responsive(MD) {
+                bottom: -20%;
+                left: 1%;
+                width: 9%;
+            }
+            @include Responsive(SM) {
+                bottom: -10%;
+                width: 38.64px;
+            }
+            @include Responsive(X48) {
+                bottom: -6%;
+            }
+        }
+
+        .box-title-main {
+            margin-bottom: 32px;
+        }
+        .title-message {
+            position: relative;
+            color: #ffffff;
+            text-shadow: #f095c3 9px 0px 0px, #f095c3 8.9445px 0.997944px 0px,
+                #f095c3 8.77869px 1.98358px 0px, #f095c3 8.50461px 2.94475px 0px,
+                #f095c3 8.12565px 3.86961px 0px, #f095c3 7.64647px 4.74674px 0px,
+                #f095c3 7.07299px 5.56533px 0px, #f095c3 6.41227px 6.31528px 0px,
+                #f095c3 5.67248px 6.98735px 0px, #f095c3 4.86272px 7.57324px 0px,
+                #f095c3 3.99299px 8.06573px 0px, #f095c3 3.07402px 8.45875px 0px,
+                #f095c3 2.11714px 8.74744px 0px, #f095c3 1.13414px 8.92825px 0px,
+                #f095c3 0.137162px 8.99895px 0px,
+                #f095c3 -0.861512px 8.95867px 0px,
+                #f095c3 -1.84956px 8.8079px 0px, #f095c3 -2.8148px 8.5485px 0px,
+                #f095c3 -3.74532px 8.18368px 0px,
+                #f095c3 -4.62965px 7.71792px 0px,
+                #f095c3 -5.45689px 7.15698px 0px,
+                #f095c3 -6.21682px 6.50777px 0px,
+                #f095c3 -6.90009px 5.77831px 0px,
+                #f095c3 -7.49825px 4.97757px 0px,
+                #f095c3 -8.00394px 4.11545px 0px,
+                #f095c3 -8.41092px 3.20258px 0px,
+                #f095c3 -8.71416px 2.2502px 0px,
+                #f095c3 -8.90993px 1.27008px 0px,
+                #f095c3 -8.99582px 0.274291px 0px,
+                #f095c3 -8.97076px -0.72488px 0px,
+                #f095c3 -8.83507px -1.71511px 0px,
+                #f095c3 -8.59041px -2.68419px 0px,
+                #f095c3 -8.23981px -3.62017px 0px,
+                #f095c3 -7.78758px -4.51149px 0px,
+                #f095c3 -7.23931px -5.34718px 0px,
+                #f095c3 -6.60176px -6.11692px 0px,
+                #f095c3 -5.88279px -6.81122px 0px,
+                #f095c3 -5.09127px -7.42152px 0px,
+                #f095c3 -4.23696px -7.94029px 0px,
+                #f095c3 -3.33039px -8.36113px 0px,
+                #f095c3 -2.38275px -8.67885px 0px,
+                #f095c3 -1.40572px -8.88954px 0px,
+                #f095c3 -0.411357px -8.99059px 0px,
+                #f095c3 0.58808px -8.98077px 0px,
+                #f095c3 1.58026px -8.86018px 0px,
+                #f095c3 2.55296px -8.63032px 0px,
+                #f095c3 3.49417px -8.29402px 0px,
+                #f095c3 4.39229px -7.85543px 0px,
+                #f095c3 5.23623px -7.31996px 0px,
+                #f095c3 6.0156px -6.69422px 0px,
+                #f095c3 6.72078px -5.98591px 0px,
+                #f095c3 7.34307px -5.20378px 0px,
+                #f095c3 7.87479px -4.35748px 0px,
+                #f095c3 8.3094px -3.45743px 0px,
+                #f095c3 8.64153px -2.51474px 0px,
+                #f095c3 8.86709px -1.54104px 0px,
+                #f095c3 8.98328px -0.548328px 0px;
+            &::before {
+                position: absolute;
+                content: attr(data-char);
+                z-index: -1;
+                width: 100%;
+                top: 5px;
+                left: 4px;
+                color: #aec6cf;
+                text-shadow: #aec6cf 9px 0px 0px,
+                    #aec6cf 8.9445px 0.997944px 0px,
+                    #aec6cf 8.77869px 1.98358px 0px,
+                    #aec6cf 8.50461px 2.94475px 0px,
+                    #aec6cf 8.12565px 3.86961px 0px,
+                    #aec6cf 7.64647px 4.74674px 0px,
+                    #aec6cf 7.07299px 5.56533px 0px,
+                    #aec6cf 6.41227px 6.31528px 0px,
+                    #aec6cf 5.67248px 6.98735px 0px,
+                    #aec6cf 4.86272px 7.57324px 0px,
+                    #aec6cf 3.99299px 8.06573px 0px,
+                    #aec6cf 3.07402px 8.45875px 0px,
+                    #aec6cf 2.11714px 8.74744px 0px,
+                    #aec6cf 1.13414px 8.92825px 0px,
+                    #aec6cf 0.137162px 8.99895px 0px,
+                    #aec6cf -0.861512px 8.95867px 0px,
+                    #aec6cf -1.84956px 8.8079px 0px,
+                    #aec6cf -2.8148px 8.5485px 0px,
+                    #aec6cf -3.74532px 8.18368px 0px,
+                    #aec6cf -4.62965px 7.71792px 0px,
+                    #aec6cf -5.45689px 7.15698px 0px,
+                    #aec6cf -6.21682px 6.50777px 0px,
+                    #aec6cf -6.90009px 5.77831px 0px,
+                    #aec6cf -7.49825px 4.97757px 0px,
+                    #aec6cf -8.00394px 4.11545px 0px,
+                    #aec6cf -8.41092px 3.20258px 0px,
+                    #aec6cf -8.71416px 2.2502px 0px,
+                    #aec6cf -8.90993px 1.27008px 0px,
+                    #aec6cf -8.99582px 0.274291px 0px,
+                    #aec6cf -8.97076px -0.72488px 0px,
+                    #aec6cf -8.83507px -1.71511px 0px,
+                    #aec6cf -8.59041px -2.68419px 0px,
+                    #aec6cf -8.23981px -3.62017px 0px,
+                    #aec6cf -7.78758px -4.51149px 0px,
+                    #aec6cf -7.23931px -5.34718px 0px,
+                    #aec6cf -6.60176px -6.11692px 0px,
+                    #aec6cf -5.88279px -6.81122px 0px,
+                    #aec6cf -5.09127px -7.42152px 0px,
+                    #aec6cf -4.23696px -7.94029px 0px,
+                    #aec6cf -3.33039px -8.36113px 0px,
+                    #aec6cf -2.38275px -8.67885px 0px,
+                    #aec6cf -1.40572px -8.88954px 0px,
+                    #aec6cf -0.411357px -8.99059px 0px,
+                    #aec6cf 0.58808px -8.98077px 0px,
+                    #aec6cf 1.58026px -8.86018px 0px,
+                    #aec6cf 2.55296px -8.63032px 0px,
+                    #aec6cf 3.49417px -8.29402px 0px,
+                    #aec6cf 4.39229px -7.85543px 0px,
+                    #aec6cf 5.23623px -7.31996px 0px,
+                    #aec6cf 6.0156px -6.69422px 0px,
+                    #aec6cf 6.72078px -5.98591px 0px,
+                    #aec6cf 7.34307px -5.20378px 0px,
+                    #aec6cf 7.87479px -4.35748px 0px,
+                    #aec6cf 8.3094px -3.45743px 0px,
+                    #aec6cf 8.64153px -2.51474px 0px,
+                    #aec6cf 8.86709px -1.54104px 0px,
+                    #aec6cf 8.98328px -0.548328px 0px;
+                @include Responsive(SM) {
+                    top: 9px;
+                }
+            }
+        }
+        .content-message {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.25px;
+            color: #000000;
+            @include Responsive(SM) {
+                padding: 0 32px;
+            }
+        }
+    }
+    .hyperlink {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.25px;
+        color: #1e5796;
+        margin-top: 30px;
+        @include Responsive(XS) {
+            padding: 0 15px;
+        }
+        a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            color: #1e5796;
+        }
+    }
+    .icon-star-1,
+    .icon-star-2,
+    .icon-star-3,
+    .icon-star-4,
+    .icon-star-5,
+    .icon-star-6,
+    .icon-star-7 {
+        position: absolute;
+        content: "";
+        @include Responsive(MD) {
+            display: none;
+        }
+    }
+    .icon-star-1 {
+        bottom: 16%;
+        left: 7%;
+        @include Responsive(LG) {
+            bottom: 15%;
+            left: 3%;
+            width: 2%;
+        }
+    }
+    .icon-star-2 {
+        bottom: 21%;
+        right: 9%;
+        @include Responsive(LG) {
+            bottom: 31%;
+            right: 4%;
+            width: 5%;
+        }
+    }
+    .icon-star-3 {
+        top: 18%;
+        right: 6%;
+        @include Responsive(LG) {
+            right: 2%;
+            width: 1.5%;
+        }
+    }
+    .icon-star-4 {
+        top: 9%;
+        left: 10%;
+        @include Responsive(LG) {
+            left: 8%;
+            width: 2%;
+        }
+    }
+    .icon-star-5 {
+        top: 47%;
+        left: 17%;
+        @include Responsive(LG) {
+            left: 9%;
+            width: 2%;
+        }
+    }
+    .icon-star-6 {
+        bottom: 5%;
+        left: 35%;
+        @include Responsive(LG) {
+            left: 30%;
+            width: 2%;
+        }
+    }
+    .icon-star-7 {
+        bottom: 20%;
+        right: 41%;
+        @include Responsive(LG) {
+            right: 36%;
+            width: 3%;
+        }
+    }
+}
+.vision-section {
+    &.thank-you-page {
+        background-color: $color_blue_5;
+        .background-line {
+            .i-bg-white {
+                background-color: $color_blue_5;
+            }
+        }
+    }
+}
+.section-form-add {
+    background-color: $color_blue_5;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 3;
+    margin-top: -100px;
+    @include Responsive(MD) {
+        margin-top: -50px;
+    }
+    @include Responsive(SM) {
+        margin-top: 0;
+    }
+    .control-form {
+        background: white;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 1024px;
+        border: 1px solid #2576b9;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 8px 8px 0 0 rgba(96, 125, 139, 0.5);
+        overflow: hidden;
+        z-index: 3;
+        position: relative;
+        @include Responsive(MD) {
+            flex-direction: column;
+        }
+
+        .control-form-title {
+            position: relative;
+            @include Responsive(MD) {
+                width: 100%;
+                position: relative;
+                top: 11px;
+            }
+            @include Responsive(MD) {
+                top: 0;
+            }
+            .content-form {
+                position: relative;
+                z-index: 2;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 120%;
+                text-align: center;
+                letter-spacing: 0.25px;
+                color: #000000;
+                padding: 0 24px;
+                @include Responsive(MD) {
+                    padding: 0 150px;
+                }
+                @include Responsive(SM) {
+                    padding: 0 100px;
+                }
+                @include Responsive(XS) {
+                    padding: 0 50px;
+                    font-size: 16px;
+                    line-height: 140%;
+                }
+                @media screen and (max-width: 400px) {
+                    padding: 0 15px;
+                }
+            }
+            .title-form {
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 0.25px;
+                line-height: 36px;
+                color: white;
+                position: relative;
+                z-index: 2;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 0.25px;
+                line-height: 48px;
+                text-shadow: rgb(37, 118, 185) 11px 0px 0px,
+                    rgb(37, 118, 185) 10.9546px 0.998623px 0px,
+                    rgb(37, 118, 185) 10.8187px 1.989px 0px,
+                    rgb(37, 118, 185) 10.5934px 2.96295px 0px,
+                    rgb(37, 118, 185) 10.2807px 3.91243px 0px,
+                    rgb(37, 118, 185) 9.88307px 4.82959px 0px,
+                    rgb(37, 118, 185) 9.40381px 5.70687px 0px,
+                    rgb(37, 118, 185) 8.84688px 6.53702px 0px,
+                    rgb(37, 118, 185) 8.21689px 7.31318px 0px,
+                    rgb(37, 118, 185) 7.51904px 8.02895px 0px,
+                    rgb(37, 118, 185) 6.7591px 8.6784px 0px,
+                    rgb(37, 118, 185) 5.94333px 9.25618px 0px,
+                    rgb(37, 118, 185) 5.07847px 9.75752px 0px,
+                    rgb(37, 118, 185) 4.17167px 10.1783px 0px,
+                    rgb(37, 118, 185) 3.23042px 10.515px 0px,
+                    rgb(37, 118, 185) 2.2625px 10.7648px 0px,
+                    rgb(37, 118, 185) 1.27588px 10.9258px 0px,
+                    rgb(37, 118, 185) 0.27873px 10.9965px 0px,
+                    rgb(37, 118, 185) -0.720724px 10.9764px 0px,
+                    rgb(37, 118, 185) -1.71422px 10.8656px 0px,
+                    rgb(37, 118, 185) -2.69357px 10.6651px 0px,
+                    rgb(37, 118, 185) -3.65067px 10.3765px 0px,
+                    rgb(37, 118, 185) -4.57762px 10.0023px 0px,
+                    rgb(37, 118, 185) -5.46676px 9.54539px 0px,
+                    rgb(37, 118, 185) -6.31075px 9.00968px 0px,
+                    rgb(37, 118, 185) -7.10263px 8.39956px 0px,
+                    rgb(37, 118, 185) -7.83584px 7.72008px 0px,
+                    rgb(37, 118, 185) -8.50434px 6.97683px 0px,
+                    rgb(37, 118, 185) -9.10261px 6.17596px 0px,
+                    rgb(37, 118, 185) -9.6257px 5.32409px 0px,
+                    rgb(37, 118, 185) -10.0693px 4.42824px 0px,
+                    rgb(37, 118, 185) -10.4297px 3.49583px 0px,
+                    rgb(37, 118, 185) -10.704px 2.53454px 0px,
+                    rgb(37, 118, 185) -10.8899px 1.55232px 0px,
+                    rgb(37, 118, 185) -10.9859px 0.557281px 0px,
+                    rgb(37, 118, 185) -10.9911px -0.442362px 0px,
+                    rgb(37, 118, 185) -10.9056px -1.43835px 0px,
+                    rgb(37, 118, 185) -10.7299px -2.42246px 0px,
+                    rgb(37, 118, 185) -10.4657px -3.38656px 0px,
+                    rgb(37, 118, 185) -10.1151px -4.3227px 0px,
+                    rgb(37, 118, 185) -9.68085px -5.22313px 0px,
+                    rgb(37, 118, 185) -9.1667px -6.08043px 0px,
+                    rgb(37, 118, 185) -8.57684px -6.88751px 0px,
+                    rgb(37, 118, 185) -7.91615px -7.63771px 0px,
+                    rgb(37, 118, 185) -7.19008px -8.32483px 0px,
+                    rgb(37, 118, 185) -6.40463px -8.94319px 0px,
+                    rgb(37, 118, 185) -5.56628px -9.4877px 0px,
+                    rgb(37, 118, 185) -4.68197px -9.95385px 0px,
+                    rgb(37, 118, 185) -3.75898px -10.3378px 0px,
+                    rgb(37, 118, 185) -2.80496px -10.6364px 0px,
+                    rgb(37, 118, 185) -1.82776px -10.8471px 0px,
+                    rgb(37, 118, 185) -0.835473px -10.9682px 0px,
+                    rgb(37, 118, 185) 0.163715px -10.9988px 0px,
+                    rgb(37, 118, 185) 1.16155px -10.9385px 0px,
+                    rgb(37, 118, 185) 2.1498px -10.7879px 0px,
+                    rgb(37, 118, 185) 3.12028px -10.5482px 0px,
+                    rgb(37, 118, 185) 4.065px -10.2213px 0px,
+                    rgb(37, 118, 185) 4.97615px -9.81009px 0px,
+                    rgb(37, 118, 185) 5.8462px -9.31783px 0px,
+                    rgb(37, 118, 185) 6.66797px -8.74861px 0px,
+                    rgb(37, 118, 185) 7.43467px -8.10714px 0px,
+                    rgb(37, 118, 185) 8.13996px -7.39871px 0px,
+                    rgb(37, 118, 185) 8.77804px -6.62918px 0px,
+                    rgb(37, 118, 185) 9.34361px -5.80491px 0px,
+                    rgb(37, 118, 185) 9.83202px -4.93268px 0px,
+                    rgb(37, 118, 185) 10.2392px -4.01973px 0px,
+                    rgb(37, 118, 185) 10.5619px -3.07357px 0px,
+                    rgb(37, 118, 185) 10.7973px -2.10203px 0px,
+                    rgb(37, 118, 185) 10.9435px -1.11313px 0px,
+                    rgb(37, 118, 185) 10.9994px -0.115036px 0px;
+
+                @include Responsive(XS) {
+                    font-size: 30px;
+                    padding: 20px 0;
+                    margin-bottom: 0;
+                }
+                @media screen and (max-width: 400px) {
+                    margin-top: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    position: relative;
+                    color: #ffffff;
+                    margin-top: -5px;
+                }
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 600px;
+                width: 600px;
+                background: #ffd95c;
+                border-radius: 50%;
+                top: 50%;
+                left: -50%;
+                z-index: 1;
+                transform: translateY(-50%);
+                @include Responsive(LG) {
+                    left: -60%;
+                }
+                @include Responsive(MD) {
+                    width: 106%;
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 320px;
+                }
+                @include Responsive(SM) {
+                    top: 20%;
+                }
+                @media screen and (max-width: 400px) {
+                    width: 120%;
+                    height: 300px;
+                }
+            }
+        }
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin-left: 40px;
+            padding: 36px 40px 36px 0;
+            @include Responsive(SM) {
+                width: 100%;
+                margin: 0;
+                padding: 0 24px;
+                margin-top: 65px;
+            }
+        }
+        .form-control {
+            width: 100%;
+            border-bottom: 1px solid #607d8b;
+
+            input {
+                outline: none;
+                height: 100%;
+                width: 100%;
+                font-size: 18px;
+                letter-spacing: 0.25px;
+                font-family: $font_content_2;
+                border: none;
+                padding-bottom: 8px;
+
+                &:focus {
+                    outline: none;
+                    border: 0;
+                    box-shadow: none !important;
+                }
+                &::placeholder {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #607d8b;
+                }
+            }
+        }
+        .group-input {
+            margin: 24px 0;
+            display: flex;
+            .number {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 120%;
+                color: $color_blue;
+                margin-right: 16px;
+                @include Responsive(SM) {
+                    font-size: 24px;
+                    line-height: 140%;
+                    letter-spacing: 0.15px;
+                }
+            }
+            .group-form-control {
+                width: 100%;
+                .form-control {
+                    margin-bottom: 24px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .icon-error {
+                margin-left: 24px;
+                align-self: center;
+                cursor: pointer;
+                @include Responsive(SM) {
+                    width: 32px;
+                }
+            }
+        }
+        .btn-add {
+            width: 124px;
+            height: 32px;
+            border-radius: 100px;
+            border: 1px solid $color_blue;
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.15px;
+            color: $color_blue;
+            padding-top: 4px;
+            margin: 40px 0 40px auto;
+            cursor: pointer;
+            &:hover {
+                background-color: $color_blue;
+                color: #ffffff;
+                transition: 0.4s;
+            }
+            @include Responsive(SM) {
+                width: 100px;
+            }
+        }
+        .box-btn-submit {
+            width: 100%;
+            background: #ffd95c;
+            border-radius: 100px;
+            text-align: center;
+            @include Responsive(SM) {
+                margin-bottom: 24px;
+            }
+            .btn-submit {
+                padding: 10px 0;
+                font-size: 30px;
+                font-weight: 700;
+                color: #2576b9;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                @supports (-webkit-touch-callout: none) {
+                    padding: 14px 0 6px;
+                }
+                // @supports not (-webkit-touch-callout: none) {
+                //     padding: 14px 0 6px;
+                // }
+            }
+        }
+    }
+}
+.section-footer-init {
+    &.thank-you-page {
+        background-color: $color_blue_5;
+        .section-footer {
+            .wrapper-icon .animate-rocket .icon-line.line-1:after {
+                background-color: $color_blue_5;
+            }
+            .control-form {
+                border: 0;
+                margin-bottom: 100px;
+            }
+        }
+        .wrapper-icon-mobile {
+            .line-rocket:after {
+                background-color: $color_blue_5;
+            }
+            .icon-line-rocket {
+                background-color: $color_blue_5;
+            }
+        }
+    }
+}

@@ -1,0 +1,543 @@
+@import "./common.scss";
+
+.page {
+    padding-bottom: 0 !important;
+    height: auto !important;
+
+    .header {
+        z-index: 10 !important;
+    }
+
+    .wave-blog-detail {
+        margin-top: 13% !important;
+        @include Responsive(LG) {
+            margin-top: 20% !important;
+        }
+        @include Responsive(MD) {
+            margin-top: 15% !important;
+        }
+        @include Responsive(SM) {
+            margin-top: 16% !important;
+        }
+        @include Responsive(X48) {
+            margin-top: 22% !important;
+        }
+
+        img {
+            margin-bottom: -3%;
+
+            @include Responsive(SM) {
+                margin-bottom: -10%;
+            }
+        }
+
+        .wave-desktop {
+            display: block;
+
+            &.mobile-image {
+                display: none;
+            }
+        }
+
+        @include Responsive(SM) {
+            .wave-desktop {
+                display: none;
+
+                &.mobile-image {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.title-main {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: $color_blue;
+    padding: 0 6%;
+
+    @include Responsive(SM) {
+        font-size: 30px;
+    }
+}
+
+.button-main {
+    padding: 11px 56px 13px 56px;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: $color_blue;
+    display: block;
+    max-height: 56px;
+    text-decoration: none;
+    border-radius: 100px;
+    @include Responsive(MD) {
+        padding: 11px 35px 13px 35px;
+    }
+    @include Responsive(SM) {
+        padding: 11px 56px 13px 56px;
+    }
+}
+
+.tuyen-dung-detail,
+.tuyen-dung-section {
+    background-color: $color_white;
+    padding-bottom: 0;
+    padding-top: 100px;
+
+    @include Responsive(XS) {
+        padding-top: 70px;
+        padding-bottom: 21px;
+    }
+}
+
+.tuyen-dung-section {
+    .content-paragraph {
+        margin-top: 24px !important;
+        max-width: 880px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: $font_content_2;
+        font-family: Montserrat;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        color: #000000;
+        @include Responsive(XS) {
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
+
+    .select-group {
+        margin-top: 78px;
+
+        @include Responsive(SM) {
+            margin-top: 32px;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include Responsive(SM) {
+                flex-direction: column;
+            }
+        }
+
+        .select-custom {
+            border: 1px solid #607d8b;
+            width: 280px;
+            border-radius: 100px;
+            overflow: hidden;
+            background: $color_white url("../images/index/select-dropdown.svg")
+                no-repeat calc(100% - 16px) 50%;
+            margin-left: 32px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            @include Responsive(SM) {
+                margin-left: 0;
+                width: 100%;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            select {
+                padding: 13.5px 16px;
+                width: 100%;
+                border: none;
+                box-shadow: none;
+                background: transparent;
+                background-image: none;
+                -webkit-appearance: none;
+                color: #607d8b;
+                font-weight: 700;
+                font-size: 16px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .jobs {
+        display: block;
+        width: 100%;
+        max-width: 1004px;
+        margin: 84px auto 73px auto;
+        border-collapse: collapse;
+        border: 1px solid #cfd8dc;
+        border-radius: 12px;
+
+        @include Responsive(SM) {
+            margin: 32px auto 16px auto;
+        }
+
+        .row-job {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 32px 32px;
+            border-bottom: 1px solid #cfd8dc;
+
+            @include Responsive(SM) {
+                flex-direction: column;
+                padding: 24px 8px;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .title {
+                width: 40%;
+                font-size: 30px;
+                font-weight: 700;
+                color: #1a81c2;
+                text-decoration: none;
+                line-height: 120%;
+
+                @include Responsive(SM) {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                    max-width: 228px;
+                    line-height: 140%;
+                    letter-spacing: 0.15px;
+                }
+            }
+
+            .description,
+            .address {
+                width: 30%;
+                font-family: $font_content_2;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 120%;
+                letter-spacing: 0.25px;
+                color: #333333;
+                @include Responsive(SM) {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+            }
+
+            .description {
+                @include Responsive(SM) {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}
+
+.tuyen-dung-detail {
+    .content {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+
+        @include Responsive(SM) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .content-paragraph {
+        width: 70%;
+
+        @include Responsive(SM) {
+            width: 100%;
+        }
+
+        .content-list {
+            width: 100%;
+            margin-bottom: 32px;
+
+            .title {
+                font-weight: 700;
+                font-size: 30px;
+                color: #2576b9;
+                line-height: 120%;
+                @include Responsive(SM) {
+                    font-size: 20px;
+                    line-height: 140%;
+                    letter-spacing: 0.15px;
+                }
+            }
+
+            ul {
+                font-family: $font_content_2;
+                font-size: 18px;
+                font-weight: 400;
+                list-style: none;
+                line-height: 28px;
+                letter-spacing: 0.25px;
+                color: #000000;
+                @include Responsive(SM) {
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+
+                li::before {
+                    content: "•"; /* Insert content that looks like bullets */
+                    padding-right: 8px;
+                    color: inherit; /* Or a color you prefer */
+                }
+            }
+        }
+    }
+
+    .btn-apply {
+        max-width: 252px;
+    }
+}
+
+#popup-tuyen-dung {
+    display: flex !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    .modal-dialog {
+        width: 90%;
+        max-width: 1024px;
+        margin: 0 auto;
+        max-height: 810px;
+
+        @include Responsive(SM) {
+            max-height: unset;
+        }
+
+        .modal-content {
+            background-color: white;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 810px;
+            position: relative;
+
+            @include Responsive(SM) {
+                max-height: unset;
+            }
+
+            .popup-banner,
+            .popup-form {
+                width: 50%;
+                height: calc(100% - 56px);
+
+                @include Responsive(SM) {
+                    width: 100%;
+                }
+            }
+
+            .popup-banner {
+                background-color: $color_blue_5;
+                position: relative;
+
+                @include Responsive(SM) {
+                    max-height: 364px;
+                }
+
+                .title {
+                    position: absolute;
+                    color: $color_blue_4;
+                    font-size: 40px;
+                    font-weight: 700;
+                    max-width: 270px;
+                    margin: 0 auto;
+                    text-align: center;
+                    top: 48px;
+                    left: 0;
+                    right: 0;
+
+                    @include Responsive(SM) {
+                        font-size: 30px;
+                        top: 26px;
+                    }
+                }
+
+                .image {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    bottom: 0;
+                    width: 100%;
+                    max-width: 436px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .popup-form {
+                padding: 36px 12px 0 12px;
+                overflow-y: auto;
+
+                @include Responsive(SM) {
+                    overflow-y: visible;
+                    padding: 24px 12px;
+                    height: auto;
+                }
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                }
+
+                .input-custom,
+                .select-custom,
+                .birthday,
+                .textarea-custom {
+                    width: 100%;
+                    margin-bottom: 12px;
+
+                    textarea,
+                    select,
+                    input {
+                        width: 100%;
+                        font-family: $font_main;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #607d8b;
+                        border: 1px solid #607d8b;
+                        border-radius: 100px;
+                        padding: 12px 16px;
+
+                        &::placeholder {
+                            text-transform: uppercase;
+                            color: #607d8b;
+                            font-variant-caps: all-petite-caps;
+                            font-size: 23px;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    textarea {
+                        border-radius: 16px;
+                    }
+                }
+
+                .select-custom {
+                    border: 1px solid #607d8b;
+                    border-radius: 100px;
+                    overflow: hidden;
+                    background: $color_white
+                        url("../images/index/select-dropdown.svg") no-repeat
+                        calc(100% - 16px) 50%;
+
+                    select {
+                        border: none;
+                        box-shadow: none;
+                        background: transparent;
+                        background-image: none;
+                        -webkit-appearance: none;
+                    }
+                }
+
+                .birthday {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .input-custom,
+                    .select-custom {
+                        margin-bottom: 0;
+                        max-width: 125px;
+
+                        @include Responsive(MD){
+                            max-width: calc(100% / 3);
+                        }
+                    }
+                }
+
+                .check-confirm {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 12px;
+
+                    input {
+                        margin-right: 8px;
+                    }
+
+                    small {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                .button-main {
+                    width: 100%;
+                    text-align: center;
+
+                    @include Responsive(SM) {
+                        font-size: 18px;
+                    }
+                }
+
+                .btn-submit{
+                    margin: 12px 0;
+                }
+
+                .validate-message{
+                    padding-left: 19px;
+                    color: #F3392F;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .popup-footer {
+                width: 100%;
+                height: 56px;
+                background-color: #eb9cc3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+            }
+
+            .close-popup-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #d22329;
+                border: none;
+                width: 40px;
+                height: 40px;
+                color: white;
+                font-size: 40px;
+                font-weight: lighter;
+
+                span {
+                    margin-top: -5px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

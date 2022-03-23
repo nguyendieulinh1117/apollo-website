@@ -1,0 +1,726 @@
+@import "../css/common.scss";
+
+.section-achievement {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 65px;
+    margin-top: -2px;
+    @include Responsive(SM) {
+        padding-bottom: 16px;
+    }
+    .box-title-main {
+        padding-top: 48px;
+        @include Responsive(SM) {
+            padding-top: 40px;
+            margin-bottom: 32px;
+            .title-main {
+                line-height: 140%;
+            }
+        }
+    }
+    .container {
+        position: relative;
+    }
+    .reward-wrapper {
+        position: relative;
+
+        .animate-flying {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            @include Responsive(MD) {
+                top: 40%;
+            }
+            .desktop-line {
+                @include Responsive(SM) {
+                    display: none;
+                }
+          
+            }
+            .mb-line {
+                display: none;
+                @include Responsive(SM) {
+                    display: block;
+                }
+            }
+
+            .rocket-animated {
+                position: absolute;
+                width: 8.2%;
+                transform: rotate(185deg);
+                opacity: 1;
+                top: 0;
+                left: 100%;
+                transition: all 0.3s ease-in-out;
+                z-index: 2;
+                @include Responsive(SM){
+                    width: 12%;
+                }
+                &.go {
+                    animation: Fly 1.5s;
+                    animation-timing-function: linear;
+                    @include Responsive(SM){
+                        animation: mobile-fly 1.5s ;
+                        animation-timing-function: linear;
+        
+                    }
+                }
+                @keyframes mobile-fly {
+                    0% {
+                        transform: rotate(193deg);
+                        top: -11%;
+                        left: -3%;
+                    }
+                    20% {
+                        top: 29%;
+                        left: 20%;
+                        transform: rotate(161deg);
+                    }
+                    40% {
+                        top: 5%;
+                        left: 40%;
+                        transform: rotate(128deg);
+                    }
+                    60% {
+                        top: 38%;
+                        left: 60%;
+                        transform: rotate(185deg);
+                    }
+                    80% {
+                        top: 71%;
+                        left: 80%;
+                        transform: rotate(143deg);
+                    }
+                    100% {
+                        top: -11%;
+                        left: 100%;
+                        transform: rotate(76deg);
+                    }
+                }
+            }
+
+            .overlay-background {
+                width: 100%;
+                height: 800px;
+                background-color: #fff;
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+                z-index: 1;
+                top: 0;
+                right: -100%;
+
+                &.go {
+                    animation: Back 1.7s;
+                    animation-timing-function: linear;
+                }
+            }
+        }
+
+        .star {
+            height: 15px;
+            width: 15px;
+            @include Responsive(MD) {
+                display: none;
+            }
+        }
+
+        .icon-wrapper {
+            div {
+                position: absolute;
+            }
+            .blue-star1 {
+                top: 40%;
+                left: 0%;
+                width: 1.5%;
+                @include Responsive(SM) {
+                    display: none;
+                }
+            }
+            .blue-star2 {
+                right: -3%;
+                top: 56%;
+                width: 1.5%;
+                img {
+                    transform: rotate(45deg);
+                }
+                @include Responsive(SM) {
+                    display: none;
+                }
+            }
+            .halo-top-right {
+                right: -2%;
+                top: -17%;
+                width: 11.4%;
+                z-index: 2;
+                @include Responsive(LG) {
+                    right: 15%;
+                    top: -21%;
+                    img {
+                        transform: rotate(-39deg);
+                    }
+                }
+                @include Responsive(SM) {
+                    right: 15%;
+                    top: -10%;
+                    width: 20.4%;
+                }
+            }
+
+            .halo-left-bottom {
+                left: -4%;
+                bottom: -9%;
+                width: 11.4%;
+                z-index: 2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transform: rotate(-144.8deg);
+                }
+                @include Responsive(LG) {
+                    left: 11%;
+                    bottom: -24%;
+                    img {
+                        transform: rotate(-218.8deg);
+                    }
+                }
+                @include Responsive(SM) {
+                    display: none;
+                }
+            }
+            .trophy-container {
+                top: -13%;
+                left: 7%;
+                width: 80px;
+                height: 80px;
+                z-index: 2;
+                @include Responsive(SM) {
+                    width: 55px;
+                    height: 65px;
+                    top: -7%;
+                }
+                .small-bluestar {
+                    position: absolute;
+                    width: 10%;
+                    left: 10px;
+                    top: 36%;
+                }
+
+                .big-bluestar {
+                    position: absolute;
+                    width: 21%;
+                    top: 54%;
+                    left: 15px;
+                }
+
+                .trophy {
+                    position: absolute;
+                    width: 100%;
+                    left: 10px;
+                }
+            }
+        }
+
+        b {
+            font-size: 30px;
+            line-height: 120%;
+            font-weight: bold;
+            color: #2576b9;
+            letter-spacing: 0.15px;
+            @include Responsive(SM) {
+                font-size: 20px;
+                line-height: 140%;
+            }
+        }
+
+        .reward {
+            display: flex;
+            align-items: center;
+            border-radius: 24px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            background: #e3f0f9;
+            padding: 32px;
+            box-sizing: border-box;
+            gap: 32px;
+            font-size: 20px;
+            line-height: 24px;
+            position: relative;
+            z-index: 1;
+            max-width: 1112px;
+            margin: 0 auto;
+            @include Responsive(SM) {
+                flex-direction: column;
+                padding: 24px;
+                gap: 0;
+            }
+
+            .achieve-desc {
+                font-family: Montserrat;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.25px;
+                margin-top: 8px;
+                @include Responsive(SM) {
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .reward-left {
+                width: 60%;
+                @include Responsive(MD) {
+                    width: 100%;
+                }
+                @include Responsive(SM) {
+                    margin-bottom: 32px;
+                }
+            }
+
+            .reward-right {
+                width: 40%;
+                @include Responsive(MD) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .reward-slider-wrapper {
+        position: relative;
+        z-index: 3;
+        .meteor {
+            position: absolute;
+            width: 90px;
+            height: 54px;
+            top: 10px;
+            left: -30px;
+            @include Responsive(LG) {
+                left: 10px;
+            }
+            @include Responsive(SM) {
+                width: 50px;
+                height: 30px;
+                left: 30px;
+                top: 0;
+            }
+        }
+
+        .group-star {
+            position: absolute;
+            width: 72px;
+            height: 79px;
+            right: -25px;
+            bottom: 0;
+            transform: rotate(-25deg);
+            @include Responsive(LG) {
+                right: 45px;
+            }
+            @include Responsive(SM) {
+                right: 15px;
+                bottom: 0px;
+                width: 48px;
+                height: 53px;
+            }
+        }
+
+        .reward-slider {
+            max-width: 1030px;
+            margin: 64px auto 0;
+            @include Responsive(LG) {
+                max-width: 825px;
+            }
+            @include Responsive(MD) {
+                max-width: 600px;
+            }
+            @include Responsive(SM) {
+                margin: 32px auto 0;
+            }
+
+            .btn-arrow {
+                cursor: pointer;
+                z-index: 2;
+                &.btn-prev {
+                    left: -4%;
+                    @include Responsive(SM) {
+                        width: 4.1%;
+                        left: 3%;
+                    }
+                }
+                &.btn-next {
+                    right: -4%;
+                    @include Responsive(SM) {
+                        width: 4.1%;
+                        right: 3%;
+                    }
+                }
+            }
+
+            .reward-slider-item {
+                height: 100%;
+                .item-container {
+                    max-width: 186px;
+                    min-height: 186px;
+                    height: 100%;
+                    background: #bcdaf2;
+                    margin: 0 auto 16px;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                    border-radius: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 16px;
+                    .item-img {
+                        width: 72px;
+                        height: 72px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .image {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: scale-down;
+                        }
+                    }
+                    .title {
+                        font-size: 18px;
+                        line-height: 140%;
+                        letter-spacing: 0.15px;
+                        text-align: center;
+                        color: $color_blue;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-teachers-about {
+    padding-bottom: 104px;
+    position: relative;
+    @include Responsive(SM) {
+        padding-bottom: 32px;
+    }
+    .icon-wrapper {
+        div {
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .blue-hat {
+            top: 0;
+            left: 3%;
+            width: 5.6%;
+            @include Responsive(SM) {
+                top: -1%;
+                left: 9%;
+                width: 14.2%;
+            }
+        }
+        .blue-meteor {
+            bottom: 9.2%;
+            right: 4%;
+            width: 6.3%;
+            @include Responsive(SM) {
+                bottom: 63.2%;
+                right: 5.2%;
+                width: 13.1%;
+            }
+        }
+    }
+    .teachers-tabs-container {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        @include Responsive(SM) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+        }
+        .tabs-bar {
+            width: 24%;
+            @include Responsive(SM) {
+                width: 100%;
+            }
+            ul {
+                width: 100%;
+                li {
+                    padding: 24px 0;
+                    position: relative;
+                    z-index: 1;
+                    &:first-child {
+                        border-bottom: 1px solid #90a4ae;
+                    }
+                    @include Responsive(SM) {
+                        padding: 16px 0;
+                        &:nth-child(2) {
+                            padding-bottom: 0;
+                        }
+                    }
+                    .tab-title {
+                        padding-top: 10px;
+                        margin: 0 auto;
+                        color: #90a4ae;
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 0.25px;
+                        cursor: pointer;
+                        &:hover {
+                            color: $color-blue;
+                        }
+                        &.active {
+                            color: $color_blue;
+                        }
+
+                        @include Responsive(MD) {
+                            font-size: 30px;
+                            line-height: 120%;
+                        }
+                        @include Responsive(SM) {
+                            width: 70%;
+                            text-align: center;
+                            &.active {
+                                margin-bottom: 24px;
+                            }
+                        }
+                    }
+
+                    .video-about {
+                        opacity: 0;
+                        visibility: hidden;
+                        height: 0;
+                        display: none;
+                        @include Responsive(SM) {
+                            display: flex;
+                            &.active {
+                                transition: 0.5s;
+                                opacity: 1;
+                                visibility: visible;
+                                height: max-content;
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            position: relative;
+            width: 70%;
+            @include Responsive(SM) {
+                width: 100%;
+            }
+            .video-about {
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: 1s;
+                    height: max-content;
+                }
+                opacity: 0;
+                visibility: hidden;
+                width: 100%;
+                max-width: 754px;
+                margin: 0 auto;
+                height: 0;
+                @include Responsive(MD) {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0;
+                    margin-top: 0;
+                }
+                @include Responsive(SM) {
+                    display: none;
+                }
+                iframe{
+                    width: 100%;
+                    height: 424px !important;
+                }
+            }
+            .teachers-slider-about {
+                opacity: 0;
+                visibility: hidden;
+                width: 87%;
+                height: 0;
+                margin: 0 auto;
+                top: 0;
+                right: 5%;
+                &.active {
+                    transition: 1s;
+                    opacity: 1;
+                    visibility: visible;
+                    height: max-content;
+                }
+
+                .teachers-slider {
+                    width: 100%;
+                    .spin::before,
+                    .spin::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 5;
+                        border-radius: 100%;
+                    }
+                    .spin::before {
+                        border: 8px solid transparent;
+                    }
+                    .spin::after {
+                        border: 0 solid transparent;
+                    }
+
+                    &.go {
+                        .spin {
+                            &:before {
+                                border-top-color: $color_blue;
+                                border-right-color: $color_blue;
+                                border-bottom-color: $color_blue;
+                                transition: border-top-color 0.15s linear,
+                                    border-right-color 0.15s linear 0.1s,
+                                    border-bottom-color 0.15s linear 0.2s;
+                            }
+                            &:after {
+                                border-top: 8px solid $color_blue;
+                                border-left-width: 8px;
+                                border-right-width: 8px;
+                                transform: rotate(270deg);
+                                transition: transform 0.4s linear 0s,
+                                    border-left-width 0s linear 0.35s,
+                                    -webkit-transform 0.4s linear 0s;
+                            }
+                        }
+                    }
+                    .btn-arrow-infrastructure {
+                        cursor: pointer;
+                        position: absolute;
+                        width: 23px;
+                        height: 41px;
+                        top: 23%;
+                        @include Responsive(SM) {
+                            top: 50%;
+                        }
+                        &.btn-prev {
+                            left: -30px;
+                            -webkit-transform: translate(0%, -50%);
+                            transform: translate(0%, -50%);
+                        }
+                        &.btn-next {
+                            right: -30px;
+                            -webkit-transform: translate(0%, -50%);
+                            transform: translate(0%, -50%);
+                        }
+                    }
+                    .slider-item {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        &:focus{
+                            outline: none;
+                        }
+                        .border-animated {
+                            position: relative;
+                            box-shadow: none;
+                            position: relative;
+                            width: 208px;
+                            height: 208px;
+                            .teacher-img {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                padding: 5px;
+                                border-radius: 100%;
+                                overflow: hidden;
+                                z-index: 1;
+
+                                &.go {
+                                    &::after {
+                                        content: "";
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        background: linear-gradient(
+                                            325.63deg,
+                                            #81bde8 20.71%,
+                                            #bcdaf2 77.7%
+                                        );
+                                        display: block;
+                                        padding: 5px;
+                                        z-index: 5;
+                                    }
+                                }
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    position: relative;
+                                    z-index: 6;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                        .desc {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            opacity: 0;
+                            visibility: hidden;
+                            text-align: center;
+                            max-width: 208px;
+                            @include Responsive(SM) {
+                                max-width: 100%;
+                            }
+                            &.go {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+
+                            .teacher-name {
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: 120%;
+                                color: $color_blue;
+                                margin-top: 16px;
+                            }
+                            .role {
+                                font-size: 20px;
+                                line-height: 120%;
+                                letter-spacing: 0.25px;
+                                color: $color_blue;
+                                font-family: Montserrat;
+                                margin-top: 8px;
+                                text-align: center;
+                            }
+                            .teacher-description {
+                                max-width: 210.67px;
+                                font-size: 14px;
+                                line-height: 140%;
+                                letter-spacing: 0.25px;
+                                font-family: Montserrat;
+                                text-align: center;
+                                margin-top: 16px;
+                                @include Responsive(SM) {
+                                    max-width: 283.67px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

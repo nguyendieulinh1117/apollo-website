@@ -1,0 +1,565 @@
+@import "../css/common.scss";
+
+.title-main{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: $color_blue;
+    padding: 0 6%;
+
+    @include Responsive(SM){
+        font-size: 30px;
+    }
+}
+
+.section-special-learning,
+.section-advance-learning{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color_blue_5;
+    padding-top: 56px;
+    z-index: 3;
+    @include Responsive(SM){
+        padding: 0 15px;
+    }
+    
+    .box-title-main{
+
+    }
+    .banner-advance{
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-top: 24px;
+
+        .background-advance{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .wave-header{
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            span{
+                position: absolute;
+                top: 20%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                text-align: center;
+                color: #2576B9;
+                font-size: 30px;
+
+                @include Responsive(SM){
+                    font-size: 14px;
+
+                }
+            }
+        }
+
+        .content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 25% 13% 16% 14%;
+
+            .list{
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .content-item{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 142px;
+                    color: white;
+                    position: absolute;
+                    font-size: 16px;
+                    line-height: 22.4px;
+                    span{
+                        color: #00B2E2;
+                        font-size: 24px;
+                        font-weight: 600;
+                        font-family: $font_content_2;
+                        margin-bottom: 8px;
+                        line-height: 30px;
+                    }
+
+                    @include Responsive(SM){
+                        font-size: 8px;
+                        max-width: 48px;
+                        line-height: 8.8px;
+                        span{
+                            font-size: inherit;
+                            line-height: 8.8px;
+                        }
+                    }
+                }
+
+                .item-1{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+
+                .item-2{
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .item-3{
+                    bottom: 0;
+                    right: 0;
+                    @include Responsive(SM){
+                        bottom: -10px;
+                    }
+                }
+
+                .arrow-1,
+                .arrow-2,
+                .arrow-3{
+                    position: absolute;
+                    width: 22%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .arrow-1{
+                    top: 15%;
+                    left: 11%;
+                    img{
+                    }
+                }
+
+                .arrow-2{
+                    top: 15%;
+                    right: 11%;
+                    img{
+                        transform: rotate(100deg);
+                    }
+                }
+
+                .arrow-3{
+                    top: 65%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 30%;
+                    img{
+                        transform: rotate(230deg);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .advantages{
+        margin: 67px 0;
+        @include Responsive(SM){
+            margin: 32px 0 67px;
+        }
+
+        .title{
+            font-size: 24px;
+            color: #2576B9;
+            text-align: center;
+        }
+
+        .advatages-list{
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+
+            @include Responsive(SM){
+                flex-direction: column;
+            }
+
+            .advatages-item{
+                max-width: 280px;
+                margin-right: 36px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                @include Responsive(SM){
+                    max-width: none;
+                    margin-right: 0;
+                    margin-bottom: 42px;
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                    @include Responsive(SM){
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .content-item{
+                    font-family: $font_content_2;
+                    font-weight: 300;
+                    font-size: 18px;
+                    text-align: justify;
+
+                    @include Responsive(SM){
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.special-content,
+.more-advance{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-top: 8px dotted $color_white;
+    padding: 68px 0;
+
+    @include Responsive(SM){
+        padding: 60px 0 50px;
+        flex-direction: column;
+    }
+
+    .image{
+        width: 45%;
+
+        img{
+            width: 100%;
+        }
+
+        @include Responsive(SM){
+            width: 100%;
+        }
+    }
+
+    .content{
+        width: 50%;
+        font-family: $font_content_2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        @include Responsive(LG){
+            gap: 16px;
+        }
+        @include Responsive(SM){
+            width: 100%;
+            align-items: flex-end;
+        }
+
+        .text-content{
+            font-size: 18px;
+            font-weight: 300;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 30px;
+
+            @include Responsive(SM){
+                margin-top: 0;
+            }
+
+            span{
+                font-family: $font_main;
+                font-size: 30px;
+                color: #2576B9;
+                margin-bottom: 16px;
+
+                @include Responsive(SM){
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .view-btn{
+            position: relative;
+            bottom: 0;
+            right: 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: $color_white;
+            background-color: #2576B9;
+            border-radius: 100px;
+            padding: 8px 40px;
+            font-family: $font_main;
+
+        }
+    }
+}
+
+.section-special-learning{
+    background-color: $color_white;
+    padding: 0 !important;
+    position: relative;
+
+    .container{
+        margin-top: 110px;
+        @include Responsive(SM){
+            margin-top: 48px;
+        }
+    }
+
+    .wave{
+        width: 100%;
+        display: flex;
+        margin-top: -1px;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .special-content{
+        border-top: none;
+        @include Responsive(SM){
+            padding: 32px 0;
+        }
+
+        .text-content{
+            margin-top: 0;
+        }
+    }
+
+    .butterfly {
+        width: 439px;
+        position: absolute;
+        left: 0;
+        top: 20%;
+        z-index: -1;
+
+        @include Responsive(X15) {
+            left: -115px;
+        }
+
+        @include Responsive(LG) {
+            left: -200px;
+        }
+
+        @include Responsive(MD) {
+            top: 20%;
+        }
+
+        @include Responsive(SM) {
+            width: 230px;
+            top: 10%;
+            left: -15px;
+        }
+
+        @include Responsive(XS){
+            display: none;
+        }
+
+        .smokeVector {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                left: -125px;
+                z-index: 1;
+            }
+
+            .background-hidden {
+                width: 0%;
+                background-color: $color_white;
+                height: 185px;
+                position: absolute;
+                top: -61px;
+                right: 20%;
+                z-index: 2;
+
+                &.go {
+                    animation-name: hiddenBackground;
+                    animation-duration: 2s;
+                    animation-delay: 0.1s;
+                }
+
+                @keyframes hiddenBackground {
+                    0% {
+                        width: 100%;
+                    }
+
+                    100% {
+                        width: 0%;
+                    }
+                }
+
+                @include Responsive(X17) {
+                    height: 180px;
+                }
+
+                @include Responsive(X15) {
+                    height: 160px;
+                }
+
+                @include Responsive(LG) {
+                    height: 150px;
+                }
+
+                @include Responsive(MD) {
+                    height: 140px;
+                }
+
+                @include Responsive(SM) {
+                    top: -45px;
+                    height: 70px;
+
+                    &.go {
+                        animation-delay: 0.5s;
+                        animation-duration: 3s;
+                    }
+                }
+            }
+        }
+
+        .butterflyVector {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                z-index: 3;
+                width: 15%;
+                right: 20%;
+                top: -40px;
+
+                &.go {
+                    animation-name: butterflyEffect;
+                    animation-duration: 2s;
+                }
+
+                @keyframes butterflyEffect {
+                    0% {
+                        right: 120%;
+                        top: 100px;
+                    }
+
+                    100% {
+                        right: 20%;
+                        top: -40px;
+                    }
+                }
+
+                @include Responsive(SM) {
+                    right: 54%;
+                    top: -21px;
+
+                    @keyframes butterflyEffect {
+                        0% {
+                            right: 120%;
+                            top: 40px;
+                        }
+
+                        100% {
+                            right: 54%;
+                            top: -21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .plant-jouney {
+        position: absolute;
+        width: 130px;
+        right: 5%;
+        top: 8%;
+
+        @include Responsive(X15) {
+            width: 120px;
+            top: 4%;
+        }
+        @include Responsive(LG) {
+            width: 110px;
+            top: 2%;
+        }
+
+        @include Responsive(MD) {
+            width: 100px;
+        }
+
+        @include Responsive(SM) {
+            width: 60px;
+            top: 4%;
+        }
+
+        @include Responsive(XS){
+            display: none;
+        }
+
+        @include Responsive(X48) {
+            width: 60px;
+            top: 2%;
+        }
+
+        .starVector {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+                width: 20%;
+                right: 30%;
+                top: -40px;
+
+                @include Responsive(SM) {
+                    top: -10px;
+                }
+            }
+        }
+
+        .planetVector {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                z-index: 3;
+                width: 100%;
+                right: 20%;
+                top: 15px;
+
+                @keyframes planetEffect {
+                    0% {
+                        right: -120%;
+                        top: 100px;
+                    }
+
+                    100% {
+                        right: 20%;
+                        top: 15px;
+                    }
+                }
+
+                &.go {
+                    animation-name: planetEffect;
+                    animation-duration: 2s;
+                }
+            }
+        }
+    }
+}

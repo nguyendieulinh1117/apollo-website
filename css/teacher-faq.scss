@@ -1,0 +1,68 @@
+@import "../css/common.scss";
+.faq-section {
+    margin-top: 65px;
+    @include Responsive(SM){
+        margin-top: 40px;
+    }
+    &-main {
+        padding-top: 20px;
+        .wrap-accordion {
+            display: flex;
+            column-gap: 92px;
+            @include Responsive(XS){
+                flex-direction: column;
+            }
+            .faq-accordion {
+                width: 50%;
+                @include Responsive(XS){
+                    width: 100%;
+                }
+                .accordion,
+                .accordion1 {
+                    margin-bottom: 50px;
+                    @include Responsive(XS){
+                        margin-bottom: 30px;
+                    }
+                    .accordion-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                        h3 {
+                            margin: 0;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 140%;
+                            letter-spacing: 0.15px;
+                            color: #000000;
+                            width: calc(100% - 50px);
+                            @include Responsive(XS){
+                                width: calc(100% - 28px);
+                            }
+                        }
+                        .accordion-icon {
+                            width: 28px;
+                            height: 28px;
+                            border-radius: 50%;
+                            border: 1px solid $color_blue;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: auto;
+                            }
+                        }
+                    }
+                    .accordion-content {
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 160%;
+                        width: calc(100% - 28px);
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

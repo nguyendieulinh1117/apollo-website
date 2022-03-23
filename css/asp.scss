@@ -1,0 +1,435 @@
+@import "../css/common.scss";
+
+.block-asp {
+    /*banner-top*/
+    .section-banner {
+        background-color: #fff;
+        padding: 0;
+    }
+    .banner-top {
+    }
+    .banner-top-text {
+        margin-bottom: 24px;
+    }
+    .banner-top-text h3 {
+        font-family: Brauer NeueVN;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin: 0;
+        color: #2576b9;
+        margin-bottom: 8px;
+    }
+    .banner-top-text p {
+        font-family: Brauer NeueVN;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: 0px;
+        color: #eb9cc3;
+        text-align: center;
+        max-width: 845px;
+        margin: 0 auto;
+    }
+    .banner-top-photo {
+        max-width: 750px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 calc(40 / 1235 * 100%);
+    }
+    .banner-top-photo figure {
+        margin: 0;
+    }
+    .section-banner .banner-top-photo {
+    }
+    .section-banner .banner-top-photo .star-left {
+        width: calc(30 / 750 * 100%);
+        top: 35%;
+        left: 5%;
+    }
+    .section-banner .banner-top-photo .star-right {
+        width: calc(30 / 750 * 100%);
+        top: 40%;
+        left: initial;
+        right: 15%;
+    }
+    .section-banner .banner-top-photo .bulb {
+        width: calc(110 / 750 * 100%);
+        top: 5%;
+        right: 32%;
+    }
+
+    .section-banner .banner-top-photo .line {
+    }
+    .section-banner .banner-top-photo .line-1 {
+        width: calc(150 / 750 * 100%);
+        top: calc(20 / 500 * 100%);
+        left: calc(0 / 500 * 100%);
+    }
+    .section-banner .banner-top-photo .line-2 {
+        right: calc(5 / 750 * 100%);
+        bottom: 0;
+        width: calc(73 / 750 * 100%);
+    }
+
+    .section-banner .container {
+        padding-bottom: 0;
+    }
+
+    /*end banner-top*/
+
+    .section-why-us.asp .items-container {
+        max-width: 1035px;
+        gap: 32px;
+    }
+    .section-why-us.asp .items-container .box-item {
+        width: calc(50% - 32px / 2);
+        max-width: initial;
+        margin: 0;
+        @include Responsive(SM) {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+        }
+    }
+    .section-why-us.asp .items-container .box-item .sub-title {
+        width: initial;
+        color: #000000;
+    }
+    .section-why-us.asp .box-title-main .title-main {
+        text-transform: capitalize;
+        line-height: 54px;
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .section-why-us.asp {
+        padding-bottom: 80px;
+    }
+    /*==================================*/
+    /*purpose*/
+    .section-purpose {
+        background-color: #bcdaf2;
+        padding: 50px 0;
+    }
+    .purpose-box {
+        display: flex;
+        max-width: 1105px;
+        margin: 0 auto;
+        gap: 35px;
+    }
+    .purpose-col {
+        flex: 1;
+        padding-top: 35px;
+        padding-left: 30px;
+        position: relative;
+    }
+    .purpose-col figure {
+        position: absolute;
+        width: 80px;
+        top: -5px;
+        left: -5px;
+        margin: 0;
+    }
+    .purpose-col:nth-child(1) figure {
+        top: -10px;
+    }
+    .purpose-col:nth-child(2) figure {
+        left: -7px;
+    }
+    .purpose-col:nth-child(3) figure {
+    }
+    .purpose-col:nth-child(4) figure {
+    }
+    .purpose-item {
+        background: #fff;
+        padding: 16px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        height: 100%;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: #000000;
+        @include Responsive(SM) {
+            font-size: 14px;
+            line-height: 140%;
+        }
+        @include Responsive(XS) {
+            min-height: 110px;
+        }
+        @include Responsive(X48) {
+            min-height: 150px;
+        }
+    }
+    /*end purpose*/
+    /*==================================*/
+    /*partner*/
+    .section-partner {
+        background: #bcdaf2;
+        padding-bottom: 190px;
+        position: relative;
+    }
+    .partner-box {
+        display: flex;
+        gap: calc(52 / 1170 * 100%);
+        @include Responsive(SM) {
+            gap: 0;
+            flex-wrap: wrap;
+        }
+        .btn-arrow {
+            top: 8%;
+            transform: none;
+            z-index: 3;
+            &.btn-prev {
+                left: 0;
+            }
+            &.btn-next {
+                right: 0;
+            }
+        }
+    }
+    .partner-col {
+        width: 50%;
+        @include Responsive(SM) {
+            width: 100%;
+        }
+    }
+    .partner-item {
+        text-align: center;
+    }
+    .partner-photo {
+        margin-bottom: 32px;
+    }
+    .partner-photo figure {
+        margin: 0;
+    }
+    .partner-photo figure img {
+        width: 208px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .partner-photo figure figcaption {
+        color: #2576b9;
+    }
+    .partner-photo figure figcaption h3 {
+        margin: 0;
+        font-family: Brauer NeueVN;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .partner-photo figure figcaption p {
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        text-align: center;
+    }
+    .partner-text {
+    }
+    .partner-text article {
+        padding: 32px;
+        background: #fff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: #000000;
+        @include Responsive(X48) {
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
+        }
+    }
+    .section-partner .wave-desktop {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .section-partner .wave-mobile {
+        display: none;
+    }
+    .section-partner .cup {
+        position: absolute;
+        bottom: 30px;
+        right: 60px;
+        z-index: 3;
+    }
+    /*end partner*/
+    /*==================================*/
+    /*system*/
+    .reaches-bottom {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .reaches-bottom-des {
+        max-width: 750px;
+        margin: 0 auto;
+        background-color: #ffd95c;
+        padding: 24px 32px;
+        font-family: Brauer NeueVN;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #2576b9;
+        margin-bottom: 60px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+    }
+    .reaches-bottom-box {
+        display: flex;
+        justify-content: center;
+    }
+    .reaches-bottom-item {
+        text-align: center;
+        flex: 1;
+        max-width: 31%;
+        @include Responsive(SM){
+            max-width: 50%;
+        }
+    }
+    .reaches-bottom-item figure {
+        margin: 0;
+    }
+    .reaches-bottom-item figure img {
+        width: 80px;
+        margin-bottom: 12px;
+    }
+    .reaches-bottom-item figure figcaption {
+    }
+    .reaches-bottom-item figure figcaption h3 {
+        margin: 0;
+        font-family: Brauer NeueVN;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: #2576b9;
+    }
+    .reaches-bottom-item figure figcaption p {
+        color: #000000;
+        margin: 0;
+        max-width: 260px;
+        margin: 0 auto;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+        text-align: center;
+    }
+    /*end system*/
+    /*==================================*/
+    @include Responsive(MD) {
+        .purpose-box {
+            flex-wrap: wrap;
+            column-gap: 0;
+        }
+        .purpose-col {
+            width: 50%;
+            flex: initial;
+            padding-right: 30px;
+        }
+    }
+    @include Responsive(SM) {
+        .section-system .reaches-number {
+            opacity: 1;
+        }
+        .section-purpose .box-title-main .title-main,
+        .section-why-us.asp .box-title-main .title-main,
+        .banner-top-text p,
+        .banner-top-text h3 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .section-why-us.asp .items-container {
+            gap: 16px;
+        }
+        .section-why-us.asp .items-container .box-item {
+            width: calc(50% - 16px / 2);
+        }
+        .section-why-us.asp .items-container .box-item .title {
+            width: 100%;
+            line-height: initial;
+        }
+        .section-why-us.asp {
+            padding-bottom: 40px;
+        }
+        .section-purpose {
+            padding: 20px 0;
+        }
+        .purpose-box {
+            flex-wrap: wrap;
+            column-gap: 35px;
+        }
+        .purpose-col {
+            width: 100%;
+            flex: initial;
+            padding-right: 30px;
+        }
+        .reaches-bottom-box {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .reaches-bottom-item {
+            width: calc(50% - 25px / 2);
+            flex: initial;
+        }
+        .reaches-bottom-item figure img {
+            width: 56px;
+        }
+        .reaches-bottom-item figure figcaption h3 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .reaches-bottom-item figure figcaption p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .partner-photo figure img {
+            width: 128px;
+        }
+        .partner-photo figure figcaption h3 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .partner-photo figure figcaption p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .partner-btn {
+            width: 14px !important;
+
+            top: 10% !important;
+        }
+        .section-partner .cup {
+            width: 54px;
+            bottom: 0;
+        }
+    }
+}

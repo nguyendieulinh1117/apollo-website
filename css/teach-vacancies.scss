@@ -1,0 +1,518 @@
+@import "../css/variable.scss";
+
+.other-job,
+.teach-vacancies{
+    padding: 68px 16px;
+
+    @include Responsive(SM){
+        padding: 40px 16px;
+    }
+
+    .container{
+        max-width: 1270px;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 48px;
+        font-weight: bold;
+        color: #2576B9;
+        text-align: center;
+
+        @include Responsive(SM){
+            font-size: 30px;
+        }
+    }
+
+    .content{
+        margin-top: 44px;
+
+        .search-bar{
+            background-color: #2576B9;
+            padding: 32px 24px;
+
+            @include Responsive(SM){
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                @include Responsive(SM) {
+                    flex-direction: column;
+                }
+            }
+    
+            .select-custom {
+                border: 1px solid #607d8b;
+                width: 246px;
+                border-radius: 100px;
+                overflow: hidden;
+                background: $color_white url("../images/index/select-dropdown.svg")
+                    no-repeat calc(100% - 16px) 50%;
+                margin-left: 32px;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                @include Responsive(MD){
+                    width: 25%;
+                }
+    
+                @include Responsive(SM) {
+                    margin-left: 0;
+                    width: 100%;
+                    margin-bottom: 16px;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+    
+                select {
+                    padding: 9.5px 16px;
+                    width: 100%;
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    background-image: none;
+                    -webkit-appearance: none;
+                    color: black;
+                    font-weight: 700;
+                    font-size: 16px;
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .input-custom{
+                border: 1px solid #607d8b;
+                width: 570px;
+                border-radius: 100px;
+                overflow: hidden;
+                background: $color_white ;
+                margin-left: 32px;
+
+                @include Responsive(LG){
+                    width: 35%;
+                }
+
+                @include Responsive(MD){
+                    width: 25%;
+                }
+
+                @include Responsive(SM){
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                input{
+                    padding: 9.5px 16px;
+                    width: 100%;
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    background-image: none;
+                    -webkit-appearance: none;
+                    color: black;
+                    font-weight: 700;
+                    font-size: 16px;
+
+                    &::placeholder{
+                        color: black;
+                    }
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .checkbox-custom{
+                display: flex;
+
+                @include Responsive(SM){
+                    margin-top: 28px;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                .choose-item{
+                    color: white;
+                    margin-left: 44px;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+
+                    @include Responsive(SM){
+                        margin-left: 0;
+                    }
+
+                    span{
+                        margin-top: 4px;
+                    }
+
+                    input{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .job-list{
+            margin-bottom: 32px;
+            p{
+                font-family: $font_content_2;
+                font-style: italic;
+                color: #607D8B;
+                margin-top: 48px;
+                margin-bottom: 12px;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            .job-item{
+                padding: 28px 24px 73px;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+                flex-wrap: wrap;
+
+                .location{
+                    color: #2576B9;
+                    font-size: 20px;
+                    margin-top: 4px;
+                }
+
+                span{
+                    background-color: #90A4AE;
+                    color: white;
+                    padding: 4px 4px 0px;
+                    margin: 0px 32px 0px 8px;
+                    font-size: 20px;
+
+                }
+
+                .description{
+                    font-family: $font_content_2;
+                    font-weight: bold;
+                    font-size: 16px;
+
+                    @include Responsive(SM){
+                        width: 100%;
+                        margin-top: 28px;
+                    }
+                }
+
+                .btn-continute{
+                    background-color: #2576B9;
+                    width: 88px;
+                    height: 88px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: -13px;
+                    right: -13px;
+                    transition: 0.2s;
+
+                    &:hover{
+                        opacity: 0.75;
+                    }
+
+                    img{
+                        width: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination{
+        display: flex;
+        justify-content: center;
+
+        ul{
+            display: flex;
+            margin-top: 0;
+
+            li{
+                margin-left: 8px;
+
+                &:first-child{
+                    margin-left: 0;
+                }
+                a{
+                    padding-top: 4px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ECEFF1;
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #e3e6e9;
+                    }
+                }
+
+                &.active{
+                    a{
+                        background-color: #2576B9;
+                        color: white;
+
+                        &:hover{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.teach-vacancies-detail{
+    padding: 68px 16px 0;
+
+    .container{
+        max-width: 1270px;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 48px;
+        font-weight: bold;
+        color: #2576B9;
+        text-align: center;
+
+        @include Responsive(SM){
+            font-size: 30px;
+        }
+    }
+
+    .content{
+        margin-top: 52px;
+
+        @include Responsive(SM){
+            margin-top: 12px;
+        }
+
+        .time-tag{
+            background-color: #2576B9;
+            max-width: 135px;
+            display: flex;
+            justify-content: center;
+            padding: 4px 8px;
+
+            @include Responsive(SM){
+                margin: 0 auto;
+            }
+
+            img{
+                width: 16px;
+                margin-right: 13px;
+            }
+
+            span{
+                text-transform: uppercase;
+                color: white;
+                font-size: 16px;
+                font-family: $font_content_2;
+            }
+        }
+
+        .title-content{
+            font-size: 30px;
+            font-weight: bold;
+            color: #2576B9;
+            margin-bottom: 8px;
+            font-family: $font_main;
+
+            @include Responsive(SM){
+                font-size: 24px;
+            }
+        }
+
+        .title-group{
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            font-family: $font_main;
+        }
+
+        ul{
+            margin-left: 1rem;
+
+            li{
+                list-style-type: disc;
+                margin-bottom: 12px;
+            }
+        }
+        
+        p{
+            text-align: justify;
+        }
+
+        .job-content{
+            width: 100%;
+            font-family: $font_content_2;
+            display: flex;
+            flex-wrap: wrap;
+
+            .job-description{
+                width: 65%;
+                padding-top: 35px;
+
+                @include Responsive(MD){
+                    width: 100%;
+                }
+            }
+
+            .apply-for-job{
+                width: 35%;
+                padding-left: 52px;
+
+                @include Responsive(MD){
+                    width: 100%;
+                    order: 4;
+                    padding-left: 0;
+                    margin-bottom: 43px;
+                    margin-top: 52px;
+                }
+
+                .apply-form{
+                    padding: 35px 16px 24px;
+                    background-color: #BCDAF2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 16px;
+                    color: #263238;
+                    position: relative;
+
+                    form{
+                        width: 100%;
+
+                        input{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px #E3F0F9 solid;
+                            padding: 12px 0;
+                            font-size: 18px;
+                            font-weight: lighter;
+
+                            &.input-text{
+                                width: 100%;
+                            }
+
+                            &::placeholder{
+                                font-weight: 400;
+                                font-family: $font_content_2;
+                                color: #263238;
+                            }
+                        }
+
+                        .checkbox-group{
+                            display: flex;
+                            align-items: center;
+
+                            input{
+                                width: 30px;
+                                min-width: 30px;
+                                height: 30px;
+                                margin-right: 13px;
+                            }
+                        }
+
+                        .send-btn{
+                            width: 100%;
+                            background-color: #2576B9;
+                            padding: 14px 0 10px;
+                            border: none;
+                            margin-top: 16px;
+                            border-radius: 100px;
+                            color: white;
+                            font-size: 30px;
+                            font-family: $font_main;
+                        }
+                    }
+
+                    .star-icon{
+                        width: 61px;
+                        position: absolute;
+                        top: -16px;
+                        left: -16px;
+
+                        @include Responsive(MD){
+                            top: -32px;
+                            left: -8px;
+                        }
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .application-information,
+            .job-requiment{
+                padding-top: 35px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.other-job{
+    padding: 0;
+    background-color: #BCDAF2;
+
+    .wave{
+        width: 100%;
+        display: flex;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .container{
+        padding: 0 16px;
+    }
+
+    .content{
+        padding-bottom: 32px;
+        .title{
+            font-size: 24px;
+            color: #2576B9;
+            text-align: left;
+        }
+
+        .job-list{
+            margin-top: 25px;
+            margin-bottom: 0;
+
+            .job-item{
+                &.active{
+                    border: 2px solid #2576B9;
+                    span{
+                        background-color: #2576B9;
+                    }
+                }
+            }
+        }
+    }
+}

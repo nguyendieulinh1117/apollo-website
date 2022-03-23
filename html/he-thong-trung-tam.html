@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Apollo English</title>
+    <link rel="icon" type="image/x-icon" href="../images/index/favicon.png" />
+    <meta name="description" content="Apollo English" />
+    <meta property="og:title" content="Apollo English" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.Apollo-english.vn" />
+    <!-- <meta property="og:image" content="../images/icomoon/icon-btn.png"> -->
+    <meta property="og:description" content="Apollo English is ..." />
+    <!-- <link href="../images/icomoon/icon-btn.png" rel="shortcut icon"> -->
+
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/font-awesome-5.css" />
+    <link rel="stylesheet" href="../css/animations.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/icomoon.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="../css/central.css">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="content-loader animatedParent">
+            <div class="box-img-flex">
+                <div class="box-item-circle">
+                    <div class="item-image img-main animated">
+                        <img src="../images/footer/a-main.svg" alt="">
+                    </div>
+                    <div class="item item-1 animated repeat delay-500"></div>
+                    <div class="item item-2 animated repeat delay-400"></div>
+                    <div class="item item-3 animated repeat delay-300"></div>
+                    <div class="item item-4 animated repeat delay-200"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Moblie -->
+    <div class="mobile-menu mobile-menu-hidden" id="mobile-menu">
+        <a href="javascript:void(0);" type="button" onclick="openMenuMobile()" class="close-mobile-menu">
+            <img src="../images/icomoon/close-button.svg" alt="">
+        </a>
+        <div class="main-menu">
+            <ul>
+                <li class="sub-menu">
+                    <a href="ve-chung-toi.html">
+                        Về chúng tôi
+                    </a>
+                    <span class="icon-polygon"></span>
+                    <ul>
+                        <li>
+                            <a href="./ve-chung-toi.html#gioi-thieu">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./ve-chung-toi.html#tam-nhin-su-menh">Tầm nhìn & sứ mệnh</a>
+                        </li>
+                        <li>
+                            <a href="./ve-chung-toi.html#vi-sao-chon-apollo">Vì sao chọn Apollo</a>
+                        </li>
+                        <li>
+                            <a href="./ve-chung-toi.html#thanh-tuu">Thành tựu</a>
+                        </li>
+                        <li>
+                            <a href="./ve-chung-toi.html#doi-ngu-giao-vien">Đội ngũ giáo viên</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="chuong-trinh-hoc.html">
+                        Chương trình học
+                    </a>
+                    <span class="icon-polygon"></span>
+                    <ul>
+                        <li><a href="./chuong-trinh-hoc.html#tieng-anh-theo-lua-tuoi">Tiếng Anh theo lứa tuổi </a></li>
+                        <li><a href="./chuong-trinh-hoc.html#phuong-phap-hoc-tap">Phương pháp học tập </a></li>
+                        <li><a href="./chuong-trinh-hoc.html#hoc-truc-tiep">Học trực tiếp </a></li>
+                        <li><a href="./chuong-trinh-hoc.html#hoc-truc-tuyen">Học trực tuyến </a></li>
+                        <li><a class="special" href="./chuong-trinh-hoc.html#chuong-trinh-dac-biet">Chương trình đặc
+                                biệt</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="he-thong-trung-tam.html">
+                        Hệ thống trung tâm
+                    </a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">
+                        Tin tức & sự kiện
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="goc-phu-huynh.html">
+                        Góc phụ huynh
+                    </a>
+                    <span class="icon-polygon"></span>
+                    <ul>
+                        <li><a href="goc-phu-huynh.html">Cùng con đến trường</a></li>
+                        <li><a href="goc-phu-huynh.html">Trắc nghiệm hay</a></li>
+                        <li><a href="goc-phu-huynh.html">Tài liệu hay</a></li>
+                        <li><a href="goc-se-chia.html">Góc sẻ chia</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" type="button" class="login-btn">
+                login alex
+            </a>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- Banner section -->
+        <section class="banner-section page">
+            <div class="container">
+                <header class="header">
+                    <a href="index.html" class="logo">
+                        <img src="../images/index/logo-white.svg" alt="" />
+                    </a>
+                    <a href="index.html" class="logo-mobile">
+                        <img src="../images/index/logo-mobile.svg" alt="" />
+                    </a>
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="ve-chung-toi.html"> Về chúng tôi </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="./ve-chung-toi.html#gioi-thieu">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ve-chung-toi.html#tam-nhin-su-menh">Tầm nhìn & sứ mệnh</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ve-chung-toi.html#vi-sao-chon-apollo">Vì sao chọn Apollo</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ve-chung-toi.html#thanh-tuu">Thành tựu</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ve-chung-toi.html#doi-ngu-giao-vien">Đội ngũ giáo viên</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuong-trinh-hoc.html"> Chương trình học </a>
+                                <ul class="sub-menu">
+                                    <li><a href="./chuong-trinh-hoc.html#tieng-anh-theo-lua-tuoi">Tiếng Anh theo lứa tuổi </a></li>
+                                    <li><a href="./chuong-trinh-hoc.html#phuong-phap-hoc-tap">Phương pháp học tập </a></li>
+                                    <li><a href="./chuong-trinh-hoc.html#hoc-truc-tiep">Học trực tiếp </a></li>
+                                    <li><a href="./chuong-trinh-hoc.html#hoc-truc-tuyen">Học trực tuyến </a></li>
+                                    <li><a class="special" href="./chuong-trinh-hoc.html#chuong-trinh-dac-biet">Chương trình đặc biệt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="he-thong-trung-tam.html"> Hệ thống trung tâm </a>
+                            </li>
+                            <li>
+                                <a href="tin-tuc.html"> Tin tức & sự kiện </a>
+                            </li>
+                            <li>
+                                <a href="goc-phu-huynh.html"> Góc phụ huynh </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Cùng con đến trường</a>
+                                    </li>
+                                    <li><a href="#">Trắc nghiệm hay</a></li>
+                                    <li><a href="#">Tài liệu hay</a></li>
+                                    <li><a href="#">Góc sẻ chia</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" type="button" class="login-btn"> login alex </a>
+                    </div>
+                    <a href="javascript:void(0);" type="button" onclick="openMenuMobile()" class="btn-mobile-menu">
+                        <img src="../images/icomoon/menu-mobile.svg" alt="" />
+                    </a>
+                </header>
+            </div>
+            <div class="wave-blog-detail wave-event wave-central">
+                <!-- <img class="wave-desktop" src="../images/pages/parents/Union-banner.png" alt="" /> -->
+                <img src="../images/index/he-thong-trung-tam-wave.svg" alt="">
+            </div>
+        </section>
+        <!-- end parents section  -->
+
+        <section class="display-animated animatedParent">
+
+            <section class="viet-nam-map active">
+                <div class="title-content">
+                    51+ TRUNG TÂM TRÊN TOÀN QUỐC 
+
+                    <div class="text-bg">
+                        51+ TRUNG TÂM TRÊN TOÀN QUỐC 
+                    </div>
+
+                    <div class="text-shadow">
+                        51+ TRUNG TÂM TRÊN TOÀN QUỐC 
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="map-main">
+                        <div class="map-image">
+                            <img src="../images/he-thong-trung-tam/ban-do-vn.svg" alt="">
+                            <div class="central-location">
+                                <div class="location" id="ha-long">
+                                    <span class="dotted" data-name="ha-long"></span>
+                                    <a href="#" class="data" data-name="ha-long" data-address="Hạ Long"></a>
+                                </div>
+                                <div class="location" id="bac-ninh">
+                                    <span class="dotted" data-name="bac-ninh"></span>
+                                    <a href="#" class="data" data-name="bac-ninh" data-address="Bắc Ninh"></a>
+                                </div>
+                                <div class="location" id="ha-noi">
+                                    <span class="dotted" data-name="ha-noi"></span>
+                                    <a href="#" class="data" data-name="ha-noi"  data-address="Hà Nội"></a>
+                                </div>
+                                <div class="location" id="hai-phong">
+                                    <span class="dotted" data-name="hai-phong"></span>
+                                    <a href="#" class="data" data-name="hai-phong"  data-address="Hải Phòng"></a>
+                                </div>
+                                <div class="location" id="vinh">
+                                    <span class="dotted" data-name="vinh"></span>
+                                    <a href="#" class="data"data-name="vinh" data-address="Vinh"></a>
+                                </div>
+                                <div class="location" id="da-nang">
+                                    <span class="dotted" data-name="da-nang"></span>
+                                    <a href="#" class="data"data-name="da-nang" data-address="Đà Nẵng"></a>
+                                </div>
+                                <div class="location" id="binh-duong">
+                                    <span class="dotted" data-name="binh-duong"></span>
+                                    <a href="#" class="data" data-name="binh-duong" data-address="Bình Dương"></a>
+                                </div>
+                                <div class="location" id="ho-chi-minh">
+                                    <span class="dotted" data-name="ho-chi-minh"></span>
+                                    <a href="#" class="data" data-name="ho-chi-minh" data-address="Hồ Chí Minh"></a>
+                                </div>
+                                <div class="location" id="bien-hoa">
+                                    <span class="dotted" data-name="bien-hoa"></span>
+                                    <a href="#" class="data" data-name="bien-hoa" data-address="Biên Hòa"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="chuong-trinh-hoc.html#hoc-truc-tuyen" class="btn-orther-center">CÁC THÀNH PHỐ KHÁC</a>
+                    </div>
+                    <div class="map-content">
+                        <a href="#" class="btn-finding-center" id="btn-finding-center">TÌM TRUNG TÂM</a>
+                        <div class="content-image">
+                            <img src="../images/index/finding-center.png" alt="">
+                        </div>
+                        <div class="content-image-shadow">
+                            <img src="../images/index/shadow-finding-center.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="central-section hidden">
+                <!-- <div class="lightbulb animated delay-750 bounceIn">
+                    <img src="../images/index/lightbulb.svg" alt="">
+                </div> -->
+
+                <div class="location-decor">
+                    <img src="../images/icons/location-decor.svg" alt="">
+                </div>
+                <div class="lookup-decor">
+                    <img src="../images/icons/lookup-decor.svg" alt="">
+                </div>
+                <div class="title-main animated">
+                    TÌM TRUNG TÂM TIẾNG ANH
+                </div>
+                <div class="container">
+                    <div class="content-central">
+                        <div class="map" id="map">
+                        </div>
+                        <div class="search-map">
+                            <div class="search-form">
+                                <form action="">
+                                    <div class="form-head">
+                                        <span>TÌM KIẾM</span>
+                                        <a href="#">XEM TẤT CẢ</a>
+                                    </div>
+                                    <div class="select-custom">
+                                        <select name="city" id="city">
+                                            <option value="0">CHỌN THÀNH PHỐ</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-custom">
+                                        <select name="district" id="district">
+                                            <option value="0">QUẬN/ HUYỆN</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search-recommend">
+                                <div class="district-group">
+                                    <div class="district-name">HÀ NỘI</div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Mỗ Lao</div>
+                                            <div class="card-body">
+                                                <p>Biệt thự 01-10 Khu đô thị Mỗ Lao, Phường Mỗ Lao, Quận Hà Đông, Hà Nội</p>
+                                                <p>Số điện thoại: 024 7300</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Mỗ Lao" data-lat="20.9826879"
+                                                    data-lng="105.7796556"
+                                                    data-address="Biệt thự 01-10 Khu đô thị Mỗ Lao, Phường Mỗ Lao, Quận Hà Đông, Hà Nội"
+                                                    data-phone="024 7300 0658">
+                                                    <img src="../images/index/coolicon.svg" alt="">TÌM TRÊN BẢN ĐỒ</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Ngoại Giao Đoàn</div>
+                                            <div class="card-body">
+                                                <p>LKC15 Embassy Garden, khu Ngoại Giao Đoàn, Phường Xuân Tảo, Quận Bắc Từ
+                                                    Liêm, Hà Nội</p>
+                                                <p>Số điện thoại: 024 7 300 8368</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Ngoại Giao Đoàn" data-lat="21.062765"
+                                                    data-lng="105.7979251"
+                                                    data-address="LKC15 Embassy Garden, khu Ngoại Giao Đoàn, Phường Xuân Tảo, Quận Bắc Từ Liêm, Hà Nội"
+                                                    data-phone="024 7 300 8368">
+                                                    <img src="../images/index/coolicon.svg" alt="">TÌM TRÊN BẢN ĐỒ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="district-group">
+                                    <div class="district-name">HỒ CHÍ MINH</div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Lũy Bán Bích</div>
+                                            <div class="card-body">
+                                                <p>573 Lũy Bán Bích, Phường Phú Thạnh, Quận Tân Phú</p>
+                                                <p>Số điện thoại: 028 7301 1369</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Lũy Bán Bích" data-lat="10.778214"
+                                                    data-lng="106.6325613"
+                                                    data-address="573 Lũy Bán Bích, Phường Phú Thạnh, Quận Tân Phú"
+                                                    data-phone="028 7301 1369">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Tô Hiến Thành</div>
+                                            <div class="card-body">
+                                                <p>213 Tô Hiến Thành, Phường 13, Quận 10</p>
+                                                <p>Số điện thoại: 028 7 303 8188</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Tô Hiến Thành" data-lat="10.7786993"
+                                                    data-lng="106.6692206"
+                                                    data-address="213 Tô Hiến Thành, Phường 13, Quận 10"
+                                                    data-phone="028 7 303 8188">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Nguyễn Văn Lượng</div>
+                                            <div class="card-body">
+                                                <p>314-316 Nguyễn Văn Lượng, P.16, Quận Gò Vấp</p>
+                                                <p>Số điện thoại: 028 7306 8797</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Nguyễn Văn Lượng" data-lat="10.8386722"
+                                                    data-lng="106.6655073"
+                                                    data-address="314-316 Nguyễn Văn Lượng, P.16, Quận Gò Vấp"
+                                                    data-phone="028 7306 8797">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="district-group">
+                                    <div class="district-name">Hải Phòng</div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo English Imperia</div>
+                                            <div class="card-body">
+                                                <p>BH03-12B đường Manhattan 10 khu Vinhomes Imperia, Hồng Bàng, Hải Phòng
+                                                </p>
+                                                <p>Số điện thoại: 0225 7 300 113</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo English Imperia " data-lat="20.8631066"
+                                                    data-lng="106.6624364"
+                                                    data-address="BH03-12B đường Manhattan 10 khu Vinhomes Imperia, Hồng Bàng, Hải Phòng"
+                                                    data-phone="0225 7 300 113">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="district-group">
+                                    <div class="district-name">Đà Nẵng</div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo Nguyễn Hữu Thọ Đà Nẵng</div>
+                                            <div class="card-body">
+                                                <p>189 Nguyễn Hữu Thọ, Hòa Thuận Tây, Hải Châu, Đà Nẵng </p>
+                                                <p>Số điện thoại: 0236 7 300 036</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button"
+                                                    data-name="Apollo Nguyễn Hữu Thọ Đà Nẵng" data-lat="16.0436813"
+                                                    data-lng="108.2083879"
+                                                    data-address="189 Nguyễn Hữu Thọ, Hòa Thuận Tây, Hải Châu, Đà Nẵng"
+                                                    data-phone="0236 7 300 036">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo Phan Văn Hớn</div>
+                                            <div class="card-body">
+                                                <p>229 Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, TPHCM </p>
+                                                <p>Số điện thoại: 028.7300 6698 – 028.7109 9509</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button" data-name="TRUNG TÂM APOLLO PHAN VĂN HỚN" data-lat="10.8308141" data-lng="106.6109168" data-address="229 Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, TPHCM" data-phone="028.7300 6698   – 028.7109 9509">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="district-group">
+                                    <div class="district-name">Bắc Ninh</div>
+                                    <div class="recommend-item">
+                                        <div class="card-item">
+                                            <div class="card-name">Apollo Từ Sơn</div>
+                                            <div class="card-body">
+                                                <p>Tầng 3 tòa nhà Long Phương, số 374 - 376 Trần Phú, Từ Sơn, Bắc Ninh</p>
+                                                <p>Số điện thoại: (0222)7306088</p>
+                                            </div>
+                                            <div class="finding-button">
+                                                <a href="javascript:void(0)" class="finding-button" data-name="TRUNG TÂM APOLLO TỪ SƠN" data-lat="21.1162574" data-lng="105.953577" data-address="Tầng 3 tòa nhà Long Phương, số 374 - 376 Trần Phú, Từ Sơn, Bắc Ninh" data-phone="(0222)7306088">
+                                                    <img src="../images/index/coolicon.svg" alt="">
+                                                    TÌM TRÊN BẢN ĐỒ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="wave">
+                    <img src="../images/index/white-wave.svg" alt="">
+                </div>
+                <div class="red-cup">
+                    <img src="../images/index/red-cup.svg" alt="">
+                </div> -->
+            </section>
+    
+        </section>
+        <!-- footer -->
+        <section class="section-footer-init animatedParent scroll-section">
+            <div class="wrapper-icon-mobile mobile">
+                <div class="icon-line-rocket animated">
+                    <img src="../images/footer/rocket.svg" alt="">
+                </div>
+                <div class="icon-line-mobile line-rocket">
+                    <img src="../images/footer/mb-line-rocket.svg" alt="">
+                </div>
+                <div class="icon-line-mobile start-1 animated delay-100 fadeIn">
+                    <img src="../images/footer/mb-start-rocket-1.svg" alt="">
+                </div>
+                <div class="icon-line-mobile start-2 animated delay-500 fadeIn">
+                    <img src="../images/footer/mb-start-rocket-2.svg" alt="">
+                </div>
+            </div>
+            <div class="section-footer animatedParent">
+                <div class="wrapper-icon desktop">
+                    <div class="animate-rocket">
+                        <div class="icon-line rocket animated">
+                            <img src="../images/footer/rocket.svg" alt="">
+                        </div>
+                        <div class="icon-line line-1">
+                            <img src="../images/footer/line.svg" alt="">
+                        </div>
+                        <div class="icon-line start-bg line-2">
+                            <div class="icon-line start-1 animated delay-50 fadeIn">
+                                <img src="../images/footer/start-rocket-1.svg" alt="">
+                            </div>
+                            <div class="icon-line start-2 animated delay-150 fadeIn">
+                                <img src="../images/footer/start-rocket-2.svg" alt="">
+                            </div>
+                            <div class="icon-line start-3 animated delay-400 fadeIn">
+                                <img src="../images/footer/start-rocket-3.svg" alt="">
+                            </div>
+                            <div class="icon-line start-4 animated delay-600 fadeIn">
+                                <img src="../images/footer/start-rocket-4.svg" alt="">
+                            </div>
+                            <img src="../images/footer/bg-rocket.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="background-footer">
+                    <img src="../images/footer/backround-footer.png" alt="">
+                </div>
+                <div class="background-footer top mobile">
+                    <img src="../images/footer/backround.svg" alt="">
+                </div>
+                <div class="wrapper-content-footer">
+                    <div class="box-footer-main animatedParent">
+                        <div class="box-item animated animated bounceInUp delay-600">
+                            <div class="content">
+                                <span>Tổ chức Giáo dục Anh Quốc hơn 25 năm kinh nghiệm</span>
+                                <span class="animated delay-1400">Tổ chức Giáo dục Anh Quốc hơn 25 năm kinh
+                                    nghiệm</span>
+                            </div>
+                            <div class="image" style="width: 68px;">
+                                <img src="../images/footer/a-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div class="box-half half-left animated bounceInRight delay-750">
+                                <div class="image" style="width: 67px;">
+                                    <img src="../images/footer/a-2.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>Phương pháp giảng dạy <br> tiêu chuẩn quốc tế</span>
+                                    <span class="animated delay-1400">Phương pháp giảng dạy tiêu chuẩn quốc tế</span>
+                                </div>
+                            </div>
+                            <div class="box-half half-right animated bounceInLeft delay-750" style="padding: 0;">
+                                <div class="image" style="width: 67px;">
+                                    <img src="../images/footer/a-4.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>Giáo trình độc quyền phù hợp lứa tuổi & bài thi quốc tế</span>
+                                    <span class="animated delay-1400">Giáo trình độc quyền phù hợp lứa tuổi & bài thi
+                                        quốc tế</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item">
+                            <div class="box-half  half-left animated bounceInRight delay-800"
+                                style="padding-right: 20px;">
+                                <div class="image" style="width: 81px;">
+                                    <img src="../images/footer/a-2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>100% môi trường tiếng Anh với giáo viên nước ngoài kinh nghiệm</span>
+                                    <span class="animated delay-1400">100% môi trường tiếng Anh với giáo viên nước ngoài
+                                        kinh nghiệm</span>
+                                </div>
+                            </div>
+                            <div class="box-half half-right animated bounceInLeft delay-800">
+                                <div class="image" style="width: 52px;">
+                                    <img src="../images/footer/a-5.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>Hệ thống quản lý học tập hàng đầu theo sát lộ trình học của con</span>
+                                    <span class="animated delay-1400">Hệ thống quản lý học tập hàng đầu theo sát lộ
+                                        trình học của con</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item-circle">
+                            <div class="item-image img-main animated delay-100">
+                                <img src="../images/footer/a-main.svg" alt="">
+                            </div>
+                            <div class="item item-1 animated delay-500"></div>
+                            <div class="item item-2 animated delay-400"></div>
+                            <div class="item item-3 animated delay-300"></div>
+                            <div class="item item-4 animated delay-200"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-form animated bounceInLeft delay-1800">
+                    <div class="control-form-title">
+                        <h2 class="title-form text-bg">
+                            <p data-char="Tư vấn & kiểm tra">Tư vấn & kiểm tra</p>
+                            <p data-char="miễn phí">miễn phí</p>
+                        </h2>
+                    </div>
+                    <form action="">
+                        <div class="form-control">
+                            <input type="text" placeholder="Họ và tên phụ huynh" id="name">
+                        </div>
+                        <div class="group-input">
+                            <div class="form-control">
+                                <input type="text" placeholder="Số điện thoại" id="phone">
+                            </div>
+                            <div class="form-control">
+                                <input type="text" placeholder="E-mail" id="email">
+                            </div>
+                        </div>
+                        <div class="box-btn-submit">
+                            <a type="button" href="#" class="btn-submit">
+                                Đăng ký
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="container">
+                    <div class="wrapper-footer">
+                        <div class="footer-bottom">
+                            <div class="item-footer-logo">
+                                <img src="../images/footer/logo.png" alt="">
+                            </div>
+                            <div class="footer-about">
+                                <div class="item-footer">
+                                    <a href="#" class="title-footer">
+                                        Liên hệ
+                                    </a>
+                                </div>
+                                <div class="item-footer">
+                                    <a href="tuyen-dung.html" class="title-footer">
+                                        Tuyển dụng
+                                    </a>
+                                </div>
+                                <div class="item-footer">
+                                    <a href="asp.html" class="title-footer">
+                                        Đối tác (ASP)
+                                    </a>
+                                </div>
+                                <div class="item-footer">
+                                    <a href="#" class="title-footer">
+                                        Teach at Apollo
+                                    </a>
+                                </div>
+                                <div class="item-footer">
+                                    <div class="title-footer">
+                                        Theo dõi chúng tôi tại
+                                    </div>
+                                    <div class="box-social">
+                                        <img src="../images/footer/Vector.svg" alt="">
+                                        <img src="../images/footer/Subtract.svg" alt="">
+                                        <img src="../images/footer/social.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy-right">
+                            <p>Copyright © 2021 Apollo English.</p>
+                            <p> All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end footer -->
+        </section>
+        <!-- end footer -->
+    </main>
+
+    <!-- CTA Fixed -->
+    <div class="cta-fixed">
+        <a href="javascript:;" class="item back-top-top">
+            <div class="box-icon box-img-flex">
+                <img src="../images/icomoon/back-to-top.svg">
+            </div>
+        </a>
+        <div class="item hotline has-sub">
+            <div class="box-icon box-img-flex">
+                <span class="icon-phone button-animation"></span>
+            </div>
+            <div class="sub">
+                <div class="sub">
+                    <a href="tel:1900292970">Hotline: 1900 - 292970</a>
+                </div>
+            </div>
+            <!-- <div class="item noti">
+            <div class="box-icon box-img-flex">
+                <span class="icon-noti"></span>
+            </div>
+            <div class="number">12</div>
+            <div class="noti-modal modal fade" id="notiModal">
+                <div class="box-title-main">
+                    <div class="title-main">
+                        Cập nhật mới nhất
+                    </div>
+                </div>
+                <div class="box-noti">
+                    <div class="item-noti">
+                        <div class="image-noti">
+                            <img src="../images/index/noti-5.png" alt="">
+                        </div>
+                        <div class="content-noti">
+                            <a href="#">Học tiếng Anh qua màu sắc và hình dạng - Bé tăng trí thông minh</a>
+                        </div>
+                    </div>
+                    <div class="item-noti">
+                        <div class="image-noti">
+                            <img src="../images/index/noti-2.png" alt="">
+                        </div>
+                        <div class="content-noti">
+                            <a href="#">Truyện tư duy hình ảnh bằng tiếng anh cho bé</a>
+                        </div>
+                    </div>
+                    <div class="item-noti">
+                        <div class="image-noti">
+                            <img src="../images/index/noti-3.png" alt="">
+                        </div>
+                        <div class="content-noti">
+                            <a href="#">Truyện tiếng Anh tô màu cho bé</a>
+                        </div>
+                    </div>
+                    <div class="item-noti">
+                        <div class="image-noti">
+                            <img src="../images/index/noti-4.png" alt="">
+                        </div>
+                        <div class="content-noti">
+                            <a href="#">HƠN 1.000.000 PHỤ HUYNH đã tin tưởng cho con học tiếng Anh tại Apollo
+                                English</a>
+                        </div>
+                    </div>
+                    <div class="item-noti">
+                        <div class="image-noti">
+                            <img src="../images/index/noti-1.png" alt="">
+                        </div>
+                        <div class="content-noti">
+                            <a href="#">Tiếng anh tiền mẫu giáo - nền tảng vững vàng - sẵn sàng tới lớp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+
+        <div class="chatbox">
+            <img src="../images/chatbox.png" alt="" />
+            <div class="chatbox-content">
+                <img src="../images/chatbox-content.png" alt="" />
+            </div>
+        </div>
+
+        <!-- Main JS -->
+        <script type="application/javascript" src="../js/jquery-3.4.1.min.js"></script>
+        <script type="application/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="../js/css3-animate-it.min.js"></script>
+        <script type="application/javascript" src="../js/owl.carousel.min.js"></script>
+        <script type="application/javascript" src="../js/slick.min.js"></script>
+        <script type="application/javascript" src="../js/lazysizes.min.js"></script>
+        <script type="application/javascript" src="../js/script.js"></script>
+        <script type="application/javascript" src="../js/page.js"></script>
+        <script async="" defer=""
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-O2SlJFwQ0r0PVirwd2z_DnoUTBz0OiI&callback=initMap"></script>
+        <script type="application/javascript" src="../js/center.js"></script>
+
+</body>
+
+</html>

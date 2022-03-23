@@ -1,0 +1,232 @@
+@import "../css/common.scss";
+.delta {
+    margin-top: 65px;
+    padding-bottom: 75px;
+    @include Responsive(SM) {
+        margin-top: 40px;
+        padding-bottom: 27px;
+    }
+    .box-title-main {
+        .title-main.dkop {
+            @include Responsive(X48) {
+                display: none;
+            }
+        }
+        .title-main.x48 {
+            display: none;
+            br {
+                @include Responsive(X48) {
+                    display: block;
+                }
+            }
+            @include Responsive(X48) {
+                display: block;
+            }
+        }
+    }
+    &-main {
+        padding-top: 24px;
+        @include Responsive(SM) {
+            padding-top: 20px;
+        }
+        .delta-content {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            text-align: justify;
+            color: $color_dark_gray;
+        }
+    }
+}
+
+.delta-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    color: $color_blue;
+    @include Responsive(SM) {
+        font-size: 26px;
+        line-height: 120%;
+        letter-spacing: 1.5px;
+    }
+}
+
+.course-outline {
+    background-color: $color_blue_5;
+    position: relative;
+    padding-bottom: 22px;
+    background-image: url(../images/teacher/DELTA-MODULE/icon-bg.png);
+    background-size: contain;
+    background-position: 0 30px;
+    background-repeat: no-repeat;
+    @include Responsive(SM) {
+        padding-bottom: 34px;
+        background-image: unset;
+    }
+    .icon-absolute {
+        position: absolute;
+        content: "";
+        top: -2%;
+        right: 5%;
+        @include Responsive(SM) {
+            top: 3%;
+        }
+        @include Responsive(XS) {
+            top: 2%;
+        }
+        @include Responsive(X48) {
+            top: 1%;
+        }
+        img {
+            @include Responsive(SM) {
+                width: 76px;
+            }
+        }
+    }
+    &-main {
+        padding-top: 56px;
+        @include Responsive(SM) {
+            padding-top: 42px;
+        }
+        .course-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27px;
+            color: $color_dark_gray;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+    }
+}
+.course-content {
+    margin-top: 12px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: justify;
+    color: $color_dark_gray;
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        font-family: "Brauer NeueVN";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: justify;
+        color: $color_blue;
+    }
+}
+.course-list {
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin: 0;
+        li {
+            padding-top: 12px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: justify;
+            color: $color_dark_gray;
+        }
+    }
+}
+
+.price {
+    position: relative;
+
+    .icon-absolute {
+        position: absolute;
+        content: "";
+        &.star {
+            top: 5%;
+            left: 10%;
+            @include Responsive(MD) {
+                top: 1%;
+            }
+            @include Responsive(SM) {
+                top: 2.5%;
+            }
+            @include Responsive(XS) {
+                top: 1%;
+            }
+            @include Responsive(X48) {
+                top: 0;
+            }
+            img {
+                @include Responsive(SM) {
+                    width: 48px;
+                }
+            }
+        }
+        &.left {
+            top: 25%;
+            left: 0;
+            img {
+                opacity: 0.5;
+            }
+            @include Responsive(SM) {
+                display: none;
+            }
+        }
+        &.right {
+            bottom: -15%;
+            right: 0;
+            z-index: 2;
+            img {
+                opacity: 0.5;
+            }
+            @include Responsive(SM) {
+                display: none;
+            }
+        }
+    }
+    &-main {
+        padding-top: 26px;
+    }
+}
+
+.how-to-apply {
+    background-color: $color_blue_5;
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 66px;
+    @include Responsive(SM) {
+        padding-bottom: 44px;
+    }
+    .icon-absolute {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 5%;
+        @include Responsive(SM) {
+            top: 2%;
+        }
+        @include Responsive(XS) {
+            top: 1%;
+        }
+        @include Responsive(X48) {
+            top: 0;
+        }
+        img {
+            @include Responsive(SM) {
+                width: 63px;
+            }
+        }
+    }
+    &-main {
+        margin-top: 32px;
+        @include Responsive(SM) {
+            margin-top: 38px;
+        }
+    }
+}

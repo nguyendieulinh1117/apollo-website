@@ -1,0 +1,247 @@
+@import './common.scss';
+@import './page.scss';
+
+#popup-lien-he {
+    display: flex !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    .modal-dialog {
+        width: 90%;
+        max-width: 955px;
+        margin: 0 auto;
+        max-height: 450px;
+
+        @include Responsive(SM) {
+            max-height: 715px;
+        }
+
+        .modal-content {
+            background-color: white;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 450px;
+            position: relative;
+
+            @include Responsive(SM) {
+                max-height: 715px;
+            }
+
+            .popup-banner {
+                background-color: $color_blue_5;
+                position: relative;
+                width: 45%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .title-content {
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                    font-size: 40px;
+                    font-weight: 700;
+                    letter-spacing: 0.25px;
+                    line-height: 52px;
+                    color: white;
+                    position: relative;
+                    z-index: 2;
+                    text-transform: uppercase;
+                    text-align: center;
+                    max-width: 300px;
+                    text-align: center;
+                    color: $color_white;
+                    text-shadow: rgb(37, 118, 185) 9px 0px 0px, rgb(37, 118, 185) 8.9445px 0.997944px 0px, rgb(37, 118, 185) 8.77869px 1.98358px 0px,
+                        rgb(37, 118, 185) 8.50461px 2.94475px 0px, rgb(37, 118, 185) 8.12565px 3.86961px 0px, rgb(37, 118, 185) 7.64647px 4.74674px 0px,
+                        rgb(37, 118, 185) 7.07299px 5.56533px 0px, rgb(37, 118, 185) 6.41227px 6.31528px 0px, rgb(37, 118, 185) 5.67248px 6.98735px 0px,
+                        rgb(37, 118, 185) 4.86272px 7.57324px 0px, rgb(37, 118, 185) 3.99299px 8.06573px 0px, rgb(37, 118, 185) 3.07402px 8.45875px 0px,
+                        rgb(37, 118, 185) 2.11714px 8.74744px 0px, rgb(37, 118, 185) 1.13414px 8.92825px 0px, rgb(37, 118, 185) 0.137162px 8.99895px 0px,
+                        rgb(37, 118, 185) -0.861512px 8.95867px 0px, rgb(37, 118, 185) -1.84956px 8.8079px 0px, rgb(37, 118, 185) -2.8148px 8.5485px 0px,
+                        rgb(37, 118, 185) -3.74532px 8.18368px 0px, rgb(37, 118, 185) -4.62965px 7.71792px 0px, rgb(37, 118, 185) -5.45689px 7.15698px 0px,
+                        rgb(37, 118, 185) -6.21682px 6.50777px 0px, rgb(37, 118, 185) -6.90009px 5.77831px 0px, rgb(37, 118, 185) -7.49825px 4.97757px 0px,
+                        rgb(37, 118, 185) -8.00394px 4.11545px 0px, rgb(37, 118, 185) -8.41092px 3.20258px 0px, rgb(37, 118, 185) -8.71416px 2.2502px 0px,
+                        rgb(37, 118, 185) -8.90993px 1.27008px 0px, rgb(37, 118, 185) -8.99582px 0.274291px 0px, rgb(37, 118, 185) -8.97076px -0.72488px 0px,
+                        rgb(37, 118, 185) -8.83507px -1.71511px 0px, rgb(37, 118, 185) -8.59041px -2.68419px 0px, rgb(37, 118, 185) -8.23981px -3.62017px 0px,
+                        rgb(37, 118, 185) -7.78758px -4.51149px 0px, rgb(37, 118, 185) -7.23931px -5.34718px 0px, rgb(37, 118, 185) -6.60176px -6.11692px 0px,
+                        rgb(37, 118, 185) -5.88279px -6.81122px 0px, rgb(37, 118, 185) -5.09127px -7.42152px 0px, rgb(37, 118, 185) -4.23696px -7.94029px 0px,
+                        rgb(37, 118, 185) -3.33039px -8.36113px 0px, rgb(37, 118, 185) -2.38275px -8.67885px 0px, rgb(37, 118, 185) -1.40572px -8.88954px 0px,
+                        rgb(37, 118, 185) -0.411357px -8.99059px 0px, rgb(37, 118, 185) 0.58808px -8.98077px 0px, rgb(37, 118, 185) 1.58026px -8.86018px 0px,
+                        rgb(37, 118, 185) 2.55296px -8.63032px 0px, rgb(37, 118, 185) 3.49417px -8.29402px 0px, rgb(37, 118, 185) 4.39229px -7.85543px 0px,
+                        rgb(37, 118, 185) 5.23623px -7.31996px 0px, rgb(37, 118, 185) 6.0156px -6.69422px 0px, rgb(37, 118, 185) 6.72078px -5.98591px 0px,
+                        rgb(37, 118, 185) 7.34307px -5.20378px 0px, rgb(37, 118, 185) 7.87479px -4.35748px 0px, rgb(37, 118, 185) 8.3094px -3.45743px 0px,
+                        rgb(37, 118, 185) 8.64153px -2.51474px 0px, rgb(37, 118, 185) 8.86709px -1.54104px 0px, rgb(37, 118, 185) 8.98328px -0.548328px 0px;
+    
+                    @include Responsive(MD) {
+                        margin: 40px auto;
+                    }
+                    // @include Responsive(X48) {
+                    //     font-size: 30px;
+                    //     max-width: 250px;
+                    // }
+    
+                    span{
+                        color: #ffd95c;
+                    }
+    
+                    .text-bg {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        color: rgb(37, 118, 185);
+                        top: 5px;
+                        left: 4px;
+                        z-index: -1;
+                        text-shadow: rgb(37, 118, 185) 13px 0px 0px, rgb(37, 118, 185) 12.9616px 0.999014px 0px, rgb(37, 118, 185) 12.8465px 1.99212px 0px,
+                            rgb(37, 118, 185) 12.6554px 2.97344px 0px, rgb(37, 118, 185) 12.3895px 3.93718px 0px, rgb(37, 118, 185) 12.0503px 4.87763px 0px,
+                            rgb(37, 118, 185) 11.6398px 5.78924px 0px, rgb(37, 118, 185) 11.1605px 6.66661px 0px, rgb(37, 118, 185) 10.6152px 7.50454px 0px,
+                            rgb(37, 118, 185) 10.0071px 8.2981px 0px, rgb(37, 118, 185) 9.3398px 9.04258px 0px, rgb(37, 118, 185) 8.61728px 9.73357px 0px,
+                            rgb(37, 118, 185) 7.8438px 10.367px 0px, rgb(37, 118, 185) 7.02393px 10.9391px 0px, rgb(37, 118, 185) 6.16252px 11.4465px 0px,
+                            rgb(37, 118, 185) 5.26466px 11.8863px 0px, rgb(37, 118, 185) 4.33566px 12.2557px 0px, rgb(37, 118, 185) 3.38103px 12.5526px 0px,
+                            rgb(37, 118, 185) 2.40639px 12.7753px 0px, rgb(37, 118, 185) 1.41753px 12.9225px 0px, rgb(37, 118, 185) 0.420279px 12.9932px 0px,
+                            rgb(37, 118, 185) -0.579456px 12.9871px 0px, rgb(37, 118, 185) -1.57576px 12.9041px 0px,
+                            rgb(37, 118, 185) -2.56275px 12.7449px 0px, rgb(37, 118, 185) -3.53458px 12.5103px 0px, rgb(37, 118, 185) -4.48551px 12.2016px 0px,
+                            rgb(37, 118, 185) -5.40991px 11.8209px 0px, rgb(37, 118, 185) -6.30231px 11.3702px 0px, rgb(37, 118, 185) -7.15744px 10.8522px 0px,
+                            rgb(37, 118, 185) -7.97024px 10.2701px 0px, rgb(37, 118, 185) -8.7359px 9.62725px 0px, rgb(37, 118, 185) -9.4499px 8.92745px 0px,
+                            rgb(37, 118, 185) -10.108px 8.17486px 0px, rgb(37, 118, 185) -10.7063px 7.37391px 0px, rgb(37, 118, 185) -11.2413px 6.52935px 0px,
+                            rgb(37, 118, 185) -11.7099px 5.64618px 0px, rgb(37, 118, 185) -12.1091px 4.72961px 0px, rgb(37, 118, 185) -12.4368px 3.78508px 0px,
+                            rgb(37, 118, 185) -12.6909px 2.81815px 0px, rgb(37, 118, 185) -12.8699px 1.83456px 0px,
+                            rgb(37, 118, 185) -12.9728px 0.840119px 0px, rgb(37, 118, 185) -12.999px -0.159292px 0px,
+                            rgb(37, 118, 185) -12.9483px -1.15776px 0px, rgb(37, 118, 185) -12.8211px -2.14938px 0px,
+                            rgb(37, 118, 185) -12.618px -3.12829px 0px, rgb(37, 118, 185) -12.3403px -4.0887px 0px,
+                            rgb(37, 118, 185) -11.9896px -5.02492px 0px, rgb(37, 118, 185) -11.568px -5.93143px 0px,
+                            rgb(37, 118, 185) -11.078px -6.80286px 0px, rgb(37, 118, 185) -10.5224px -7.63405px 0px,
+                            rgb(37, 118, 185) -9.90465px -8.42009px 0px, rgb(37, 118, 185) -9.2283px -9.15634px 0px,
+                            rgb(37, 118, 185) -8.49737px -9.83843px 0px, rgb(37, 118, 185) -7.71618px -10.4623px 0px,
+                            rgb(37, 118, 185) -6.88936px -11.0244px 0px, rgb(37, 118, 185) -6.0218px -11.5212px 0px,
+                            rgb(37, 118, 185) -5.11862px -11.9499px 0px, rgb(37, 118, 185) -4.18517px -12.3079px 0px,
+                            rgb(37, 118, 185) -3.22696px -12.5931px 0px, rgb(37, 118, 185) -2.24967px -12.8039px 0px,
+                            rgb(37, 118, 185) -1.25908px -12.9389px 0px, rgb(37, 118, 185) -0.261039px -12.9974px 0px,
+                            rgb(37, 118, 185) 0.738545px -12.979px 0px, rgb(37, 118, 185) 1.73376px -12.8839px 0px, rgb(37, 118, 185) 2.71872px -12.7125px 0px,
+                            rgb(37, 118, 185) 3.68761px -12.466px 0px, rgb(37, 118, 185) 4.63468px -12.1458px 0px, rgb(37, 118, 185) 5.55435px -11.7537px 0px,
+                            rgb(37, 118, 185) 6.44116px -11.2921px 0px, rgb(37, 118, 185) 7.28988px -10.7637px 0px, rgb(37, 118, 185) 8.09548px -10.1717px 0px,
+                            rgb(37, 118, 185) 8.85321px -9.51949px 0px, rgb(37, 118, 185) 9.55858px -8.81099px 0px, rgb(37, 118, 185) 10.2074px -8.05039px 0px,
+                            rgb(37, 118, 185) 10.7959px -7.24217px 0px, rgb(37, 118, 185) 11.3205px -6.39112px 0px, rgb(37, 118, 185) 11.7782px -5.50227px 0px,
+                            rgb(37, 118, 185) 12.1662px -4.58088px 0px, rgb(37, 118, 185) 12.4822px -3.6324px 0px, rgb(37, 118, 185) 12.7244px -2.66244px 0px,
+                            rgb(37, 118, 185) 12.8914px -1.67673px 0px, rgb(37, 118, 185) 12.9821px -0.681097px 0px;
+                    }
+    
+                    .text-shadow {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 9px;
+                        left: 9px;
+                        z-index: -2;
+                        color: white;
+                        text-shadow: #90A4AE 13px 0px 0px, #90A4AE 12.9616px 0.999014px 0px, #90A4AE 12.8465px 1.99212px 0px,
+                            #90A4AE 12.6554px 2.97344px 0px, #90A4AE 12.3895px 3.93718px 0px, #90A4AE 12.0503px 4.87763px 0px,
+                            #90A4AE 11.6398px 5.78924px 0px, #90A4AE 11.1605px 6.66661px 0px, #90A4AE 10.6152px 7.50454px 0px,
+                            #90A4AE 10.0071px 8.2981px 0px, #90A4AE 9.3398px 9.04258px 0px, #90A4AE 8.61728px 9.73357px 0px,
+                            #90A4AE 7.8438px 10.367px 0px, #90A4AE 7.02393px 10.9391px 0px, #90A4AE 6.16252px 11.4465px 0px,
+                            #90A4AE 5.26466px 11.8863px 0px, #90A4AE 4.33566px 12.2557px 0px, #90A4AE 3.38103px 12.5526px 0px,
+                            #90A4AE 2.40639px 12.7753px 0px, #90A4AE 1.41753px 12.9225px 0px, #90A4AE 0.420279px 12.9932px 0px,
+                            #90A4AE -0.579456px 12.9871px 0px, #90A4AE -1.57576px 12.9041px 0px,
+                            #90A4AE -2.56275px 12.7449px 0px, #90A4AE -3.53458px 12.5103px 0px, #90A4AE -4.48551px 12.2016px 0px,
+                            #90A4AE -5.40991px 11.8209px 0px, #90A4AE -6.30231px 11.3702px 0px, #90A4AE -7.15744px 10.8522px 0px,
+                            #90A4AE -7.97024px 10.2701px 0px, #90A4AE -8.7359px 9.62725px 0px, #90A4AE -9.4499px 8.92745px 0px,
+                            #90A4AE -10.108px 8.17486px 0px, #90A4AE -10.7063px 7.37391px 0px, #90A4AE -11.2413px 6.52935px 0px,
+                            #90A4AE -11.7099px 5.64618px 0px, #90A4AE -12.1091px 4.72961px 0px, #90A4AE -12.4368px 3.78508px 0px,
+                            #90A4AE -12.6909px 2.81815px 0px, #90A4AE -12.8699px 1.83456px 0px,
+                            #90A4AE -12.9728px 0.840119px 0px, #90A4AE -12.999px -0.159292px 0px,
+                            #90A4AE -12.9483px -1.15776px 0px, #90A4AE -12.8211px -2.14938px 0px,
+                            #90A4AE -12.618px -3.12829px 0px, #90A4AE -12.3403px -4.0887px 0px,
+                            #90A4AE -11.9896px -5.02492px 0px, #90A4AE -11.568px -5.93143px 0px,
+                            #90A4AE -11.078px -6.80286px 0px, #90A4AE -10.5224px -7.63405px 0px,
+                            #90A4AE -9.90465px -8.42009px 0px, #90A4AE -9.2283px -9.15634px 0px,
+                            #90A4AE -8.49737px -9.83843px 0px, #90A4AE -7.71618px -10.4623px 0px,
+                            #90A4AE -6.88936px -11.0244px 0px, #90A4AE -6.0218px -11.5212px 0px,
+                            #90A4AE -5.11862px -11.9499px 0px, #90A4AE -4.18517px -12.3079px 0px,
+                            #90A4AE -3.22696px -12.5931px 0px, #90A4AE -2.24967px -12.8039px 0px,
+                            #90A4AE -1.25908px -12.9389px 0px, #90A4AE -0.261039px -12.9974px 0px,
+                            #90A4AE 0.738545px -12.979px 0px, #90A4AE 1.73376px -12.8839px 0px, #90A4AE 2.71872px -12.7125px 0px,
+                            #90A4AE 3.68761px -12.466px 0px, #90A4AE 4.63468px -12.1458px 0px, #90A4AE 5.55435px -11.7537px 0px,
+                            #90A4AE 6.44116px -11.2921px 0px, #90A4AE 7.28988px -10.7637px 0px, #90A4AE 8.09548px -10.1717px 0px,
+                            #90A4AE 8.85321px -9.51949px 0px, #90A4AE 9.55858px -8.81099px 0px, #90A4AE 10.2074px -8.05039px 0px,
+                            #90A4AE 10.7959px -7.24217px 0px, #90A4AE 11.3205px -6.39112px 0px, #90A4AE 11.7782px -5.50227px 0px,
+                            #90A4AE 12.1662px -4.58088px 0px, #90A4AE 12.4822px -3.6324px 0px, #90A4AE 12.7244px -2.66244px 0px,
+                            #90A4AE 12.8914px -1.67673px 0px, #90A4AE 12.9821px -0.681097px 0px;
+                    }
+                }
+
+                @include Responsive(SM) {
+                    width: 100%;
+                    height: 40%;
+                }
+            }
+
+            .popup-form {
+                padding: 40px 56px;
+                width: 55%;
+                height: 100%;
+                overflow-y: auto;
+
+                @include Responsive(SM) {
+                    width: 100%;
+                    height: 60%;
+                    padding: 24px 12px;
+                }
+
+                .information{
+                    .office{
+                        span{
+                            color: $color_blue;
+                            font-size: 24px;
+                        }
+                        p{
+                            font-family: $font_content_2;
+                            font-size: 18px;
+                            letter-spacing: 0.25px;
+                            margin-top: 5px;
+                        }
+                    }
+                    .lience{
+                        font-family: $font_content_2;
+                        font-size: 18px;
+                        letter-spacing: 0.25px;
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 16px;
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            width: 50%;
+                            height: 1px;
+                            background-color: black;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+                    .contact{
+                        margin-top: 16px;
+                        font-family: $font_content_2;
+                        font-size: 18px;
+                        letter-spacing: 0.25px;
+                    }
+                }
+            }
+
+            .close-popup-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #d22329;
+                border: none;
+                width: 40px;
+                height: 40px;
+                color: white;
+                font-size: 40px;
+                font-weight: lighter;
+
+                span {
+                    margin-top: -5px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

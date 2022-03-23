@@ -1,0 +1,67 @@
+// CSS general
+$color: #3dd0d8;
+$color_blue: #2576b9;
+$color_blue_2: rgb(0, 221, 255);
+$color_blue_3: rgba(227, 240, 249, 1);
+$color_blue_4: #198be1;
+$color_blue_5: #bcdaf2;
+$color_dark_gray: #263238;
+$color_gray: #888888;
+$color_green: #00b339;
+$color_white: #fff;
+$color_yellow: #fcfe15;
+$color_yellow_2: #ffd95c;
+$color_yellow_3: #ffc62a;
+$color_pink: #e94286;
+$font_main: "Brauer NeueVN";
+$font_content: "Nunito";
+$font_content_2: "Montserrat";
+
+// Khai báo kích thước tương ứng với màn hình thiết bị
+$X48: 480px;
+$XS: 575px;
+$SM: 767px;
+$MD: 991px;
+$LG: 1199px;
+$X15: 1500px;
+$X17: 1700px;
+// media queries
+@mixin Responsive($canvas) {
+    @if $canvas == XS {
+        @media only screen and (max-width: $XS) {
+            @content;
+        }
+    } @else if $canvas == SM {
+        @media only screen and (max-width: $SM) {
+            @content;
+        }
+    } @else if $canvas == MD {
+        @media only screen and (max-width: $MD) {
+            @content;
+        }
+    } @else if $canvas == LG {
+        @media only screen and (max-width: $LG) {
+            @content;
+        }
+    } @else if $canvas == X15 {
+        @media only screen and (max-width: $X15) {
+            @content;
+        }
+    } @else if $canvas == X17 {
+        @media only screen and (max-width: $X17) {
+            @content;
+        }
+    } @else if $canvas == X48 {
+        @media only screen and (max-width: $X48) {
+            @content;
+        }
+    } @else if $canvas == M16 {
+        @media only screen and (max-width: 1700px) and (min-width: 1490px) {
+            @content;
+        }
+    } @else if $canvas == M13 {
+        @media only screen and (max-width: 1500px) and (min-width: 1200px) {
+            @content;
+        }
+    }
+}

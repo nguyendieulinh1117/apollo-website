@@ -1,0 +1,862 @@
+@import "../css/common.scss";
+.learning-curriculum {
+    .by-ages-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+
+        .layout-left {
+            width: 100%;
+            max-width: 255px;
+            ul {
+                position: sticky;
+                top: 72px;
+            }
+        }
+
+        .layout-right {
+            width: 100%;
+            
+            .section-by-ages {
+                width: 100%;
+            }
+
+            
+        }
+    }
+    .section-study-method {
+        width: 100%;
+        margin-left: auto;
+
+        .wave-top, .wave-bottom{
+            display: flex;
+            position: relative;
+            z-index: 3;
+        }
+        .wave-top {
+            margin-top: -1px;
+        }
+
+        .wave-bottom{
+            margin-top: -60px;
+            margin-bottom: -2px;
+            @include Responsive(SM){
+                margin-top: -30px;
+            }
+            @include Responsive(X48){
+                margin-top: -15px;
+            }
+        }
+
+        .method-container {
+            position: relative;
+            z-index: 3;
+            margin-top: 90px;
+            @include Responsive(SM) {
+                width: 100%;
+                padding: 0 15px;
+                margin-top: 33px;
+            }
+
+            .method-title {
+                position: relative;
+
+                .icon-hat {
+                    position: absolute;
+                    content: "";
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 23%;
+                    width: 96.89px;
+                    @include Responsive(LG) {
+                        right: 19%;
+                    }
+                    @include Responsive(MD) {
+                        right: 10%;
+                    }
+                    @include Responsive(SM) {
+                        width: 10%;
+                        right: 6%;
+                    }
+                    @include Responsive(XS) {
+                        right: 8%;
+                    }
+                    @include Responsive(X48) {
+                        width: 12%;
+                        right: 2%;
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+            .slide-container{
+                padding-bottom: 125px;
+                position: relative;
+                @include Responsive(MD){
+                    padding-bottom: 0;
+                }
+
+                .icon-star1, .icon-star2, .icon-star3, .icon-book{
+                    position: absolute;
+                   content: "";
+                   @include Responsive(MD){
+                       display: none;
+                   }
+                }
+
+                .icon-star1{
+                    top: 45%;
+                    left: -5%;
+                    @media screen and (max-width: 1280px) {
+                        left: 0;
+                    }
+                }
+
+                .icon-star2{
+                    top: 28%;
+                    right: -20px;
+                    @media screen and (max-width: 1280px) {
+                        right: 0;
+                    }
+                }
+
+                .icon-star3{
+                    bottom: 28%;
+                    right: -60px;
+                    @media screen and (max-width: 1280px) {
+                        right: 0;
+                    }
+                }
+
+                .icon-book{
+                    bottom: 0;
+                    left: -70px;
+                    @media screen and (max-width: 1280px) {
+                        left: 0;
+                    }
+                }
+                
+                .list-slides {
+    
+                    .btn-arrow {
+                        z-index: 4;
+                        @include Responsive(SM) {
+                            width: 24px;
+                            height: 30px;
+                        }
+                        @include Responsive(X48) {
+                            width: 10px;
+                            height: 20px;
+                        }
+    
+                        img {
+                            height: 100%;
+                        }
+    
+                        &.btn-prev {
+                            left: 0;
+                            @include Responsive(XS) {
+                                left: -2%;
+                            }
+                            @include Responsive(X48) {
+                                left: 1%;
+                            }
+                        }
+    
+                        &.btn-next {
+                            right: 0;
+                            @include Responsive(XS) {
+                                right: -2%;
+                            }
+                            @include Responsive(X48) {
+                                right: 1%;
+                            }
+                        }
+                    }
+    
+                    .slick-dots {
+                        display: flex;
+                        justify-content: center;
+    
+                        li {
+                            margin: 0 8px;
+    
+                            button {
+                                font-size: 0;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                padding: 0;
+                                border: 0;
+                                outline: none;
+                                cursor: pointer;
+                                background: #cfd8dc;
+                            }
+    
+                            &.slick-active {
+                                button {
+                                    background: #2576b9;
+                                }
+                            }
+                        }
+                    }
+    
+                    .slide-item {
+                        &-layout {
+                            width: 90%;
+                            margin: auto;
+                            border-radius: 16px;
+                            background: #2576b9;
+                            padding: 21px 44px 36px;
+                            @include Responsive(MD) {
+                                padding: 15px 25px 20px;
+                            }
+                            @include Responsive(SM) {
+                                padding: 15px 20px 15px;
+                            }
+                            @include Responsive(XS) {
+                                padding: 10px 20px 20px;
+                            }
+                            @include Responsive(X48) {
+                                padding: 10px 15px 15px;
+                            }
+    
+                            .layout-img {
+                                position: relative;
+                            }
+    
+                            .layout-content {
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 28px;
+                                text-align: justify;
+                                letter-spacing: 0.05px;
+                                color: #ffffff;
+                                margin-top: 32px;
+                                @include Responsive(XS) {
+                                    margin-top: 14px;
+                                    font-size: 12px;
+                                    line-height: 140%;
+                                    letter-spacing: 0.25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+
+            .study {
+                padding: 50px 0 100px; 
+                width: 100%;
+                position: relative;
+                @include Responsive(MD) {
+                    margin: 70px 0;
+                    padding: 0;
+                }
+                @include Responsive(SM) {
+                    margin: 50px 0;
+                    padding-top: 0;
+                }
+
+                .icon-pen, .icon-star4, .icon-star5{
+                    position: absolute;
+                    content: "";
+                }
+
+                .icon-pen{
+                    top: -50px;
+                    right: -40px;
+                    @media screen and (max-width: 1280px){
+                        right: 0;
+                    }
+                    @include Responsive(MD){
+                        display: none;
+                    }
+                }
+
+                .icon-star4{
+                    top: -30px;
+                    left: -40px;
+                    @media screen and (max-width: 1280px){
+                        left: 0;
+                    }
+                    @include Responsive(MD){
+                        display: none;
+                    }
+                }
+
+                .icon-star5{
+                    bottom: 10%;
+                    left: 30%;
+                    @include Responsive(LG){
+                        bottom: 25%;
+                    }
+                    @include Responsive(MD){
+                        display: none;
+                    }
+                }
+
+                .title {
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 54px;
+                    letter-spacing: 0px;
+                    color: #2576b9;
+                    @include Responsive(MD) {
+                        line-height: 120%;
+                        text-align: center;
+                        margin-bottom: 45px;
+                    }
+                    @include Responsive(SM) {
+                        font-size: 30px;
+                    }
+
+                    &.offline {
+                        margin-left: 50%;
+
+                        @include Responsive(MD) {
+                            margin-left: 0;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .offline-method,
+                .online-method {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .method-description {
+                        width: 50%;
+                        @include Responsive(MD) {
+                            width: 100%;
+                        }
+
+                        .content {
+                            @include Responsive(SM) {
+                                padding: 0 15px;
+                            }
+
+                            p {
+                                padding-top: 32px;
+                                font-family: Montserrat;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px;
+                                letter-spacing: 0.05px;
+                                text-align: justify;
+                                margin: 0;
+                                color: #000000;
+                                @include Responsive(MD) {
+                                    text-align: center;
+                                }
+                                @include Responsive(SM) {
+                                    font-size: 14px;
+                                    line-height: 140%;
+                                    letter-spacing: 0.25px;
+                                    padding-top: 16px;
+                                }
+                            }
+
+                            ul {
+                                margin: 0;
+                                padding-top: 16px;
+
+                                li {
+                                    font-family: Montserrat;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    text-align: justify;
+                                    letter-spacing: 0.05px;
+                                    color: #000000;
+                                    @include Responsive(MD) {
+                                        text-align: center;
+                                    }
+                                    @include Responsive(SM) {
+                                        font-size: 14px;
+                                        line-height: 140%;
+                                        letter-spacing: 0.25px;
+                                    }
+
+                                    strong {
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        letter-spacing: 0.25px;
+                                        color: #2576b9;
+                                        @include Responsive(SM) {
+                                            font-size: 14px;
+                                            line-height: 28px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .method-image {
+                        width: 50%;
+                        position: relative;
+                        @include Responsive(MD) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .online-method {
+                    .method-description {
+                        @include Responsive(MD) {
+                            order: 2;
+                        }
+                    }
+
+                    .method-image {
+                        margin-top: -60px;
+                        @include Responsive(LG){
+                            margin-top: 0;
+                        }
+                        @include Responsive(MD) {
+                            order: 1;
+                        }
+
+                        .bg-image {
+                            width: 378px;
+                            margin: auto;
+                            position: relative;
+
+                            @include Responsive(LG) {
+                                width: 90%;
+                            }
+                            @include Responsive(MD) {
+                                width: 310px;
+                            }
+                            @include Responsive(X48) {
+                                width: 80%;
+                            }
+
+                            .i-method1 {
+                                position: absolute;
+                                content: "";
+                                top: -7%;
+                                left: 3%;
+                                @include Responsive(LG) {
+                                    width: 82px;
+                                    top: 0%;
+                                    left: 10%;
+                                }
+                                @include Responsive(MD){
+                                    top: -7%;
+                                    left: 3%;
+                                }
+                                @include Responsive(X48) {
+                                    width: 25%;
+                                }
+                            }
+
+                            .i-method2 {
+                                position: absolute;
+                                content: "";
+                                top: -17%;
+                                left: 70%;
+                                @include Responsive(LG) {
+                                    width: 82px;
+                                    top: -10%;
+                                }
+                                @include Responsive(MD){
+                                    top: -17%;
+                                }
+                                @include Responsive(X48) {
+                                    width: 25%;
+                                }
+                            }
+
+                            .i-method3 {
+                                position: absolute;
+                                content: "";
+                                bottom: 29%;
+                                right: -10%;
+                                @include Responsive(LG) {
+                                    width: 30px;
+                                    bottom: 24%;
+                                    right: -6%;
+                                }
+                                @include Responsive(MD){
+                                    bottom: 29%;
+                                    right: -10%;
+                                }
+                                @include Responsive(X48) {
+                                    width: 8%;
+                                    right: -6%;
+                                }
+                            }
+
+                            .i-method4 {
+                                position: absolute;
+                                content: "";
+                                bottom: -7%;
+                                right: -6%;
+                                @include Responsive(LG) {
+                                    width: 116px;
+                                    bottom: 0%;
+                                    right: -2%;
+                                }
+                                @include Responsive(MD){
+                                    bottom: -7%;
+                                    right: -6%;
+                                }
+                                @include Responsive(X48) {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .offline-method .method-image {
+                    margin-top: -60px;
+                    @include Responsive(MD) {
+                        margin-top: 0;
+                    }
+
+                    .bg-image {
+                        width: 371.48px;
+                        margin: auto;
+                        position: relative;
+                        @include Responsive(LG) {
+                            width: 90%;
+                        }
+                        @include Responsive(MD) {
+                            width: 325.88px;
+                            margin-bottom: 32px;
+                        }
+                        @include Responsive(SM) {
+                            width: 325.88px;
+                            margin-bottom: 32px;
+                        }
+                        @include Responsive(X48) {
+                            width: 80%;
+                        }
+
+                        .i-method1 {
+                            position: absolute;
+                            content: "";
+                            top: 9%;
+                            left: 0%;
+                            @include Responsive(LG) {
+                                width: 58px;
+                            }
+                            @include Responsive(X48) {
+                                width: 20%;
+                            }
+                        }
+
+                        .i-method2 {
+                            position: absolute;
+                            content: "";
+                            bottom: -3%;
+                            left: -3%;
+                            @include Responsive(LG) {
+                                bottom: -4%;
+                                left: 0;
+                                width: 90%;
+                            }
+                            @include Responsive(MD) {
+                                bottom: -4%;
+                                left: -1%;
+                                width: 90%;
+                            }
+
+                            @include Responsive(SM) {
+                                width: 307.6px;
+                            }
+                            @include Responsive(X48) {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .animated-bottom {
+            margin-left: auto;
+            position: relative;
+            height: 100px;
+            .line,
+            .star,
+            .bigstar,
+            .laptop,
+            .globe {
+                position: absolute;
+                content: "";
+            }
+            .line { 
+                top: 0;
+                right: -17%;
+                z-index: 1;
+            }
+            .star {
+                top: 59%;
+                right: 49%;
+                z-index: 3;
+                @include Responsive(LG) {
+                    top: 46%;
+                }
+                @include Responsive(MD) {
+                    top: 34%;
+                    width: 2%;
+                }
+                @include Responsive(SM) {
+                    top: 32%;
+                    right: 53%;
+                    width: 1.5%;
+                }
+                @include Responsive(XS) {
+                    top: 34%;
+                }
+                @include Responsive(X48) {
+                    top: 18%;
+                }
+            }
+            .bigstar {
+                top: -40%;
+                right: 30%;
+                z-index: 3;
+                @include Responsive(LG) {
+                    top: -50%;
+                    right: 33%;
+                }
+                @include Responsive(MD) {
+                    right: 32%;
+                    width: 4%;
+                }
+                @include Responsive(SM) {
+                    top: -25%;
+                    right: 27%;
+                    height: 13.22px;
+                    width: 12.83px;
+                }
+                @include Responsive(X48) {
+                    right: 33%;
+                }
+            }
+            .laptop {
+                top: -47%;
+                right: 19%;
+                z-index: 3;
+                @include Responsive(MD) {
+                    top: -27%;
+                    width: 12%;
+                }
+                @include Responsive(SM) {
+                    top: -19%;
+                    width: 46.72px;
+                    height: 44.64px;
+                }
+            }
+            .globe {
+                top: -63%;
+                right: 83%;
+                width: 97px;
+                z-index: 4;
+                @include Responsive(MD) {
+                    top: -42%;
+                    width: 12%;
+                }
+                @include Responsive(SM) {
+                    top: -34%;
+                    right: 102%;
+                    width: 44.98px;
+                    height: 47.08px;
+                }
+                &.globeEffect {
+                    top: -63%;
+                    right: 83%;
+                    @include Responsive(MD) {
+                        top: -42%;
+                    }
+                    @include Responsive(SM) {
+                        top: -32%;
+                    }
+                    &.go {
+                        animation: globeEffect 2s linear;
+                        @include Responsive(MD) {
+                            animation: globeEffectTablet 2s linear;
+                        }
+                        @include Responsive(SM) {
+                            animation: globeEffectMoblie 2s linear;
+                        }
+                    }
+                }
+            }
+            .animated-bg-white {
+                width: 1000px;
+                height: 120px;
+                position: absolute;
+                content: "";
+                top: -63%;
+                right: 87%;
+                background-color: #ffffff;
+                z-index: 2;
+                &.bgWhiteEffect {
+                    top: -63%;
+                    right: 87%;
+                    &.go {
+                        animation: bgWhiteEffect 2s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+//animation
+@keyframes globeEffect {
+    0% {
+        top: -55%;
+        right: -30%;
+        @include Responsive(SM) {
+            top: -14%;
+        }
+    }
+    18% {
+        top: -17%;
+        right: -11%;
+        @include Responsive(SM) {
+            top: -13%;
+        }
+    }
+    25% {
+        top: -32%;
+        right: 1%;
+        @include Responsive(SM) {
+            top: -16%;
+        }
+    }
+    40% {
+        top: -59%;
+        right: 21%;
+        @include Responsive(SM) {
+            top: -28%;
+        }
+    }
+    70% {
+        top: -25%;
+        right: 52%;
+        @include Responsive(SM) {
+            top: -15%;
+        }
+    }
+    90% {
+        top: -50%;
+        right: 70%;
+        @include Responsive(SM) {
+            top: -22%;
+        }
+    }
+    100% {
+        top: -63%;
+        right: 83%;
+        @include Responsive(SM) {
+            top: -32%;
+        }
+    }
+}
+@keyframes globeEffectTablet {
+    0% {
+        right: -30%;
+        top: -14%;
+    }
+    18% {
+        right: -11%;
+        top: -13%;
+    }
+    25% {
+        top: -16%;
+        right: 1%;
+    }
+    40% {
+        top: -28%;
+        right: 21%;
+    }
+    70% {
+        top: -15%;
+        right: 52%;
+    }
+    90% {
+        top: -22%;
+        right: 70%;
+    }
+    100% {
+        right: 83%;
+        top: -42%;
+    }
+}
+@keyframes globeEffectMoblie {
+    0% {
+        right: -30%;
+        top: -14%;
+    }
+    18% {
+        right: -11%;
+        top: -13%;
+    }
+    25% {
+        top: -16%;
+        right: 1%;
+    }
+    40% {
+        top: -28%;
+        right: 21%;
+    }
+    70% {
+        top: -15%;
+        right: 52%;
+    }
+    90% {
+        top: -22%;
+        right: 70%;
+    }
+    100% {
+        right: 83%;
+        top: -32%;
+    }
+}
+@keyframes bgWhiteEffect {
+    0% {
+        top: -55%;
+        right: -30%;
+    }
+    18% {
+        top: -17%;
+        right: -11%;
+    }
+    25% {
+        top: -32%;
+        right: 1%;
+    }
+    40% {
+        top: -59%;
+        right: 21%;
+    }
+    70% {
+        top: -25%;
+        right: 52%;
+    }
+    90% {
+        top: -50%;
+        right: 70%;
+    }
+    100% {
+        top: -63%;
+        right: 87%;
+    }
+}

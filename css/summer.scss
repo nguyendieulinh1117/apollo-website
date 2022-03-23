@@ -1,0 +1,1342 @@
+@import "../css/common.scss";
+@import "./summer2.scss";
+.banner-blog-detail {
+    &.summer {
+        margin-bottom: 40px;
+
+        @include Responsive(SM) {
+            margin-top: -70px;
+        }
+
+        @include Responsive(XS) {
+            margin-top: -60px;
+        }
+        @include Responsive(X48) {
+            margin-top: -52px;
+        }
+    }
+
+    .explore-btn {
+        background: $color_yellow_2;
+        box-shadow: 4px 4px 0px rgba(69, 90, 100, 0.5);
+        border-radius: 100px;
+        width: 284px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 22.5vw;
+        bottom: 60px;
+
+        @include Responsive(LG) {
+            bottom: 50px;
+            right: 21vw;
+        }
+        @media screen and(max-width: 1100px) {
+            bottom: 40px;
+            right: 20vw;
+        }
+        @media screen and(max-width: 1024px) {
+            bottom: 40px;
+            right: 19vw;
+        }
+        @include Responsive(MD) {
+            bottom: 30px;
+            right: 16.5vw;
+        }
+        @media screen and(max-width: 880px) {
+            bottom: 25px;
+            right: 15.5vw;
+        }
+        @media screen and(max-width: 800px) {
+            bottom: 22px;
+            right: 14.5vw;
+        }
+        @include Responsive(SM) {
+            bottom: -8px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        @include Responsive(X48) {
+            bottom: -5.5%;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 120%;
+            color: $color_blue;
+        }
+    }
+}
+
+.message-section {
+    &.summer {
+        .content-message {
+            .title-content {
+                max-width: 980px;
+
+                @include Responsive(MD) {
+                    max-width: 700px;
+                }
+
+                @include Responsive(SM) {
+                    font-size: 28px;
+                    line-height: 40px;
+                    max-width: 550px;
+                }
+                @media screen and (max-width: 650px) {
+                    font-size: 28px;
+                    line-height: 40px;
+                    max-width: 430px;
+                }
+
+                @include Responsive(XS) {
+                    max-width: 375px;
+                }
+
+                @include Responsive(X48) {
+                    max-width: 288px;
+                }
+            }
+
+            .trophy-container {
+                top: 15%;
+                left: 10%;
+
+                @include Responsive(MD) {
+                    top: 3%;
+                    left: 3%;
+                }
+                @include Responsive(SM) {
+                    top: 12%;
+                    left: 4%;
+                }
+
+                @include Responsive(XS) {
+                    top: 3%;
+                    left: 3%;
+                }
+
+                .trophy {
+                    @include Responsive(MD) {
+                        left: 35.82%;
+                    }
+                }
+            }
+
+            .red-cup {
+                left: 8%;
+                bottom: 27%;
+
+                @include Responsive(MD) {
+                    left: 3%;
+                    bottom: 3%;
+                }
+                @include Responsive(SM) {
+                    bottom: 22%;
+                }
+                @include Responsive(XS) {
+                    left: 3%;
+                    bottom: 20%;
+                }
+                @include Responsive(X48) {
+                    bottom: 10%;
+                }
+            }
+
+            .ballon {
+                top: 15%;
+                right: 8%;
+
+                @include Responsive(MD) {
+                    top: 3%;
+                    right: 3%;
+                }
+                @include Responsive(SM) {
+                    top: 12%;
+                    right: 4%;
+                }
+
+                @include Responsive(XS) {
+                    top: 3%;
+                    right: 3%;
+                }
+            }
+
+            .lightbulb {
+                bottom: 35%;
+                right: 8%;
+
+                @include Responsive(MD) {
+                    bottom: 8%;
+                    right: 3%;
+                }
+                @include Responsive(SM) {
+                    bottom: 22%;
+                }
+                @include Responsive(XS) {
+                    right: 3%;
+                    bottom: 15%;
+                }
+
+                img {
+                    @include Responsive(MD) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.challenge-section {
+    margin-top: 50px;
+    margin-bottom: 73px;
+    @include Responsive(SM) {
+        margin-bottom: 40px;
+    }
+    .challenge-items {
+        display: flex;
+        column-gap: 32px;
+        max-width: 1142px;
+        &.slick-slider .btn-arrow {
+            top: 20%;
+            z-index: 10;
+        }
+        .challenge-item {
+            flex-basis: 100%;
+            @include Responsive(SM) {
+                flex-basis: unset;
+            }
+            &-img {
+                text-align: center;
+                img {
+                    width: auto;
+                    margin: auto;
+                }
+            }
+
+            &-box {
+                background-color: $color_blue_5;
+                margin-top: -33px;
+                padding: 44px 32px 36px;
+                text-align: center;
+                -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                -webkit-border-radius: 24px;
+                -moz-border-radius: 24px;
+                border-radius: 24px;
+                @include Responsive(SM) {
+                    padding: 40px 20px 24px;
+                }
+                .challenge-top {
+                    // height: 264px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    // @include Responsive(MD) {
+                    //     height: unset;
+                    // }
+                    // @include Responsive(SM) {
+                    //     height: 210px;
+                    // }
+                    // @include Responsive(XS) {
+                    //     height: 264px;
+                    // }
+
+                    .challenge-title {
+                        // min-height: 72px;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 120%;
+                        color: #fff;
+                        position: relative;
+                        z-index: 0;
+                        margin-bottom: 16px;
+                        .title-bg {
+                            position: absolute;
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                            color: rgb(235, 156, 195);
+                            text-shadow: rgb(235, 156, 195) 9px 0px 0px,
+                                rgb(235, 156, 195) 8.9445px 0.997944px 0px,
+                                rgb(235, 156, 195) 8.77869px 1.98358px 0px,
+                                rgb(235, 156, 195) 8.50461px 2.94475px 0px,
+                                rgb(235, 156, 195) 8.12565px 3.86961px 0px,
+                                rgb(235, 156, 195) 7.64647px 4.74674px 0px,
+                                rgb(235, 156, 195) 7.07299px 5.56533px 0px,
+                                rgb(235, 156, 195) 6.41227px 6.31528px 0px,
+                                rgb(235, 156, 195) 5.67248px 6.98735px 0px,
+                                rgb(235, 156, 195) 4.86272px 7.57324px 0px,
+                                rgb(235, 156, 195) 3.99299px 8.06573px 0px,
+                                rgb(235, 156, 195) 3.07402px 8.45875px 0px,
+                                rgb(235, 156, 195) 2.11714px 8.74744px 0px,
+                                rgb(235, 156, 195) 1.13414px 8.92825px 0px,
+                                rgb(235, 156, 195) 0.137162px 8.99895px 0px,
+                                rgb(235, 156, 195) -0.861512px 8.95867px 0px,
+                                rgb(235, 156, 195) -1.84956px 8.8079px 0px,
+                                rgb(235, 156, 195) -2.8148px 8.5485px 0px,
+                                rgb(235, 156, 195) -3.74532px 8.18368px 0px,
+                                rgb(235, 156, 195) -4.62965px 7.71792px 0px,
+                                rgb(235, 156, 195) -5.45689px 7.15698px 0px,
+                                rgb(235, 156, 195) -6.21682px 6.50777px 0px,
+                                rgb(235, 156, 195) -6.90009px 5.77831px 0px,
+                                rgb(235, 156, 195) -7.49825px 4.97757px 0px,
+                                rgb(235, 156, 195) -8.00394px 4.11545px 0px,
+                                rgb(235, 156, 195) -8.41092px 3.20258px 0px,
+                                rgb(235, 156, 195) -8.71416px 2.2502px 0px,
+                                rgb(235, 156, 195) -8.90993px 1.27008px 0px,
+                                rgb(235, 156, 195) -8.99582px 0.274291px 0px,
+                                rgb(235, 156, 195) -8.97076px -0.72488px 0px,
+                                rgb(235, 156, 195) -8.83507px -1.71511px 0px,
+                                rgb(235, 156, 195) -8.59041px -2.68419px 0px,
+                                rgb(235, 156, 195) -8.23981px -3.62017px 0px,
+                                rgb(235, 156, 195) -7.78758px -4.51149px 0px,
+                                rgb(235, 156, 195) -7.23931px -5.34718px 0px,
+                                rgb(235, 156, 195) -6.60176px -6.11692px 0px,
+                                rgb(235, 156, 195) -5.88279px -6.81122px 0px,
+                                rgb(235, 156, 195) -5.09127px -7.42152px 0px,
+                                rgb(235, 156, 195) -4.23696px -7.94029px 0px,
+                                rgb(235, 156, 195) -3.33039px -8.36113px 0px,
+                                rgb(235, 156, 195) -2.38275px -8.67885px 0px,
+                                rgb(235, 156, 195) -1.40572px -8.88954px 0px,
+                                rgb(235, 156, 195) -0.411357px -8.99059px 0px,
+                                rgb(235, 156, 195) 0.58808px -8.98077px 0px,
+                                rgb(235, 156, 195) 1.58026px -8.86018px 0px,
+                                rgb(235, 156, 195) 2.55296px -8.63032px 0px,
+                                rgb(235, 156, 195) 3.49417px -8.29402px 0px,
+                                rgb(235, 156, 195) 4.39229px -7.85543px 0px,
+                                rgb(235, 156, 195) 5.23623px -7.31996px 0px,
+                                rgb(235, 156, 195) 6.0156px -6.69422px 0px,
+                                rgb(235, 156, 195) 6.72078px -5.98591px 0px,
+                                rgb(235, 156, 195) 7.34307px -5.20378px 0px,
+                                rgb(235, 156, 195) 7.87479px -4.35748px 0px,
+                                rgb(235, 156, 195) 8.3094px -3.45743px 0px,
+                                rgb(235, 156, 195) 8.64153px -2.51474px 0px,
+                                rgb(235, 156, 195) 8.86709px -1.54104px 0px,
+                                rgb(235, 156, 195) 8.98328px -0.548328px 0px;
+                        }
+
+                        .title-shadow {
+                            position: absolute;
+                            width: 100%;
+                            top: 4px;
+                            left: 4px;
+                            z-index: -2;
+                            color: #aec6cf;
+                            text-shadow: #aec6cf 9px 0px 0px,
+                                #aec6cf 8.9445px 0.997944px 0px,
+                                #aec6cf 8.77869px 1.98358px 0px,
+                                #aec6cf 8.50461px 2.94475px 0px,
+                                #aec6cf 8.12565px 3.86961px 0px,
+                                #aec6cf 7.64647px 4.74674px 0px,
+                                #aec6cf 7.07299px 5.56533px 0px,
+                                #aec6cf 6.41227px 6.31528px 0px,
+                                #aec6cf 5.67248px 6.98735px 0px,
+                                #aec6cf 4.86272px 7.57324px 0px,
+                                #aec6cf 3.99299px 8.06573px 0px,
+                                #aec6cf 3.07402px 8.45875px 0px,
+                                #aec6cf 2.11714px 8.74744px 0px,
+                                #aec6cf 1.13414px 8.92825px 0px,
+                                #aec6cf 0.137162px 8.99895px 0px,
+                                #aec6cf -0.861512px 8.95867px 0px,
+                                #aec6cf -1.84956px 8.8079px 0px,
+                                #aec6cf -2.8148px 8.5485px 0px,
+                                #aec6cf -3.74532px 8.18368px 0px,
+                                #aec6cf -4.62965px 7.71792px 0px,
+                                #aec6cf -5.45689px 7.15698px 0px,
+                                #aec6cf -6.21682px 6.50777px 0px,
+                                #aec6cf -6.90009px 5.77831px 0px,
+                                #aec6cf -7.49825px 4.97757px 0px,
+                                #aec6cf -8.00394px 4.11545px 0px,
+                                #aec6cf -8.41092px 3.20258px 0px,
+                                #aec6cf -8.71416px 2.2502px 0px,
+                                #aec6cf -8.90993px 1.27008px 0px,
+                                #aec6cf -8.99582px 0.274291px 0px,
+                                #aec6cf -8.97076px -0.72488px 0px,
+                                #aec6cf -8.83507px -1.71511px 0px,
+                                #aec6cf -8.59041px -2.68419px 0px,
+                                #aec6cf -8.23981px -3.62017px 0px,
+                                #aec6cf -7.78758px -4.51149px 0px,
+                                #aec6cf -7.23931px -5.34718px 0px,
+                                #aec6cf -6.60176px -6.11692px 0px,
+                                #aec6cf -5.88279px -6.81122px 0px,
+                                #aec6cf -5.09127px -7.42152px 0px,
+                                #aec6cf -4.23696px -7.94029px 0px,
+                                #aec6cf -3.33039px -8.36113px 0px,
+                                #aec6cf -2.38275px -8.67885px 0px,
+                                #aec6cf -1.40572px -8.88954px 0px,
+                                #aec6cf -0.411357px -8.99059px 0px,
+                                #aec6cf 0.58808px -8.98077px 0px,
+                                #aec6cf 1.58026px -8.86018px 0px,
+                                #aec6cf 2.55296px -8.63032px 0px,
+                                #aec6cf 3.49417px -8.29402px 0px,
+                                #aec6cf 4.39229px -7.85543px 0px,
+                                #aec6cf 5.23623px -7.31996px 0px,
+                                #aec6cf 6.0156px -6.69422px 0px,
+                                #aec6cf 6.72078px -5.98591px 0px,
+                                #aec6cf 7.34307px -5.20378px 0px,
+                                #aec6cf 7.87479px -4.35748px 0px,
+                                #aec6cf 8.3094px -3.45743px 0px,
+                                #aec6cf 8.64153px -2.51474px 0px,
+                                #aec6cf 8.86709px -1.54104px 0px,
+                                #aec6cf 8.98328px -0.548328px 0px;
+                        }
+                    }
+
+                    .challenge-content {
+                        font-family: Montserrat;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        text-align: center;
+                        letter-spacing: 0.25px;
+                        color: #000000;
+                        // max-height: 212px;
+                        // min-height: 176px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        @include Responsive(MD) {
+                            max-height: unset;
+                            min-height: unset;
+                        }
+                        @include Responsive(SM) {
+                            height: calc(100% - 52px);
+                        }
+                        @include Responsive(XS) {
+                            max-height: 212px;
+                            min-height: 176px;
+                        }
+
+                        p {
+                            margin-top: 16px;
+                            margin-bottom: 0;
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+
+                .challenge-bottom {
+                    font-family: Montserrat;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    letter-spacing: 0.25px;
+                    color: #000000;
+                    margin-top: 20px;
+                    min-height: 108px;
+                    @include Responsive(LG) {
+                        min-height: 135px;
+                    }
+                    @include Responsive(SM) {
+                        min-height: 95px;
+                    }
+                    .arrow-down {
+                        margin-bottom: 14px;
+                        img {
+                            width: auto;
+                            margin: auto;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.companion-section {
+    background-image: url(../images/summer/bgrfunland.png);
+    background-repeat: no-repeat;
+    background-position: 0 125px !important;
+    background-color: $color_blue_5;
+    position: relative;
+    padding: 125px 0 100px;
+    @include Responsive(SM) {
+        padding-top: 90px;
+        padding-bottom: 0;
+        background-image: none;
+    }
+    @include Responsive(X48) {
+        padding-top: 50px;
+    }
+    .wave-top {
+        display: flex;
+        margin-top: -1px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .icon-absolute {
+        position: absolute;
+        top: 0;
+        right: 55px;
+        @include Responsive(LG) {
+            top: -26px;
+        }
+        @include Responsive(SM) {
+            top: -15px;
+            right: 30px;
+        }
+
+        img {
+            @include Responsive(SM) {
+                width: 60px;
+            }
+        }
+    }
+
+    .wrap-absolute {
+        position: absolute;
+        top: 125px;
+        left: 1%;
+        width: 98%;
+        z-index: 0;
+
+        @include Responsive(MD) {
+            display: none;
+        }
+    }
+
+    .companion-main {
+        padding-top: 91px;
+        position: relative;
+        z-index: 1;
+        @include Responsive(SM) {
+            padding-top: 32px;
+        }
+        .box-title-main {
+            margin-bottom: 28px;
+            @include Responsive(SM) {
+                padding: 0 32px;
+            }
+            .title-main {
+                font-size: 48px;
+                line-height: 54px;
+                @include Responsive(SM) {
+                    font-size: 30px;
+                    line-height: 120%;
+                }
+            }
+        }
+
+        .box-content {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            color: #000000;
+            max-width: 1112px;
+            width: 100%;
+            padding: 0 15px;
+            margin: auto;
+
+            @include Responsive(LG) {
+                max-width: 900px;
+            }
+            @include Responsive(SM) {
+                font-size: 14px;
+                line-height: 140%;
+                padding: 0 32px;
+            }
+        }
+
+        .companion-accordion {
+            display: flex;
+            margin-top: 72px;
+            align-items: center;
+            max-width: 1142px;
+            @include Responsive(SM) {
+                flex-direction: column;
+                margin-top: 48px;
+            }
+            .summer-accordion {
+                width: 50%;
+                @include Responsive(SM) {
+                    width: calc(100% - 66px);
+                    text-align: center;
+                }
+                .accordion {
+                    border-bottom: 1px solid #fff;
+                    margin-bottom: 24px;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &-title {
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 0.25px;
+                        color: #ffffff;
+                        position: relative;
+                        z-index: 0;
+                        cursor: pointer;
+                        margin-bottom: 24px;
+                        @include Responsive(SM) {
+                            font-size: 30px;
+                            line-height: 120%;
+                            margin-bottom: 16px;
+                        }
+                        .title-bg {
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                            width: 100%;
+                            color: rgb(235, 156, 195);
+                            text-shadow: rgb(235, 156, 195) 9px 0px 0px,
+                                rgb(235, 156, 195) 8.9445px 0.997944px 0px,
+                                rgb(235, 156, 195) 8.77869px 1.98358px 0px,
+                                rgb(235, 156, 195) 8.50461px 2.94475px 0px,
+                                rgb(235, 156, 195) 8.12565px 3.86961px 0px,
+                                rgb(235, 156, 195) 7.64647px 4.74674px 0px,
+                                rgb(235, 156, 195) 7.07299px 5.56533px 0px,
+                                rgb(235, 156, 195) 6.41227px 6.31528px 0px,
+                                rgb(235, 156, 195) 5.67248px 6.98735px 0px,
+                                rgb(235, 156, 195) 4.86272px 7.57324px 0px,
+                                rgb(235, 156, 195) 3.99299px 8.06573px 0px,
+                                rgb(235, 156, 195) 3.07402px 8.45875px 0px,
+                                rgb(235, 156, 195) 2.11714px 8.74744px 0px,
+                                rgb(235, 156, 195) 1.13414px 8.92825px 0px,
+                                rgb(235, 156, 195) 0.137162px 8.99895px 0px,
+                                rgb(235, 156, 195) -0.861512px 8.95867px 0px,
+                                rgb(235, 156, 195) -1.84956px 8.8079px 0px,
+                                rgb(235, 156, 195) -2.8148px 8.5485px 0px,
+                                rgb(235, 156, 195) -3.74532px 8.18368px 0px,
+                                rgb(235, 156, 195) -4.62965px 7.71792px 0px,
+                                rgb(235, 156, 195) -5.45689px 7.15698px 0px,
+                                rgb(235, 156, 195) -6.21682px 6.50777px 0px,
+                                rgb(235, 156, 195) -6.90009px 5.77831px 0px,
+                                rgb(235, 156, 195) -7.49825px 4.97757px 0px,
+                                rgb(235, 156, 195) -8.00394px 4.11545px 0px,
+                                rgb(235, 156, 195) -8.41092px 3.20258px 0px,
+                                rgb(235, 156, 195) -8.71416px 2.2502px 0px,
+                                rgb(235, 156, 195) -8.90993px 1.27008px 0px,
+                                rgb(235, 156, 195) -8.99582px 0.274291px 0px,
+                                rgb(235, 156, 195) -8.97076px -0.72488px 0px,
+                                rgb(235, 156, 195) -8.83507px -1.71511px 0px,
+                                rgb(235, 156, 195) -8.59041px -2.68419px 0px,
+                                rgb(235, 156, 195) -8.23981px -3.62017px 0px,
+                                rgb(235, 156, 195) -7.78758px -4.51149px 0px,
+                                rgb(235, 156, 195) -7.23931px -5.34718px 0px,
+                                rgb(235, 156, 195) -6.60176px -6.11692px 0px,
+                                rgb(235, 156, 195) -5.88279px -6.81122px 0px,
+                                rgb(235, 156, 195) -5.09127px -7.42152px 0px,
+                                rgb(235, 156, 195) -4.23696px -7.94029px 0px,
+                                rgb(235, 156, 195) -3.33039px -8.36113px 0px,
+                                rgb(235, 156, 195) -2.38275px -8.67885px 0px,
+                                rgb(235, 156, 195) -1.40572px -8.88954px 0px,
+                                rgb(235, 156, 195) -0.411357px -8.99059px 0px,
+                                rgb(235, 156, 195) 0.58808px -8.98077px 0px,
+                                rgb(235, 156, 195) 1.58026px -8.86018px 0px,
+                                rgb(235, 156, 195) 2.55296px -8.63032px 0px,
+                                rgb(235, 156, 195) 3.49417px -8.29402px 0px,
+                                rgb(235, 156, 195) 4.39229px -7.85543px 0px,
+                                rgb(235, 156, 195) 5.23623px -7.31996px 0px,
+                                rgb(235, 156, 195) 6.0156px -6.69422px 0px,
+                                rgb(235, 156, 195) 6.72078px -5.98591px 0px,
+                                rgb(235, 156, 195) 7.34307px -5.20378px 0px,
+                                rgb(235, 156, 195) 7.87479px -4.35748px 0px,
+                                rgb(235, 156, 195) 8.3094px -3.45743px 0px,
+                                rgb(235, 156, 195) 8.64153px -2.51474px 0px,
+                                rgb(235, 156, 195) 8.86709px -1.54104px 0px,
+                                rgb(235, 156, 195) 8.98328px -0.548328px 0px;
+                        }
+
+                        .title-shadow {
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                            z-index: -2;
+                            display: none;
+                            width: 100%;
+                            color: #aec6cf;
+                            text-shadow: #aec6cf 9px 0px 0px,
+                                #aec6cf 8.9445px 0.997944px 0px,
+                                #aec6cf 8.77869px 1.98358px 0px,
+                                #aec6cf 8.50461px 2.94475px 0px,
+                                #aec6cf 8.12565px 3.86961px 0px,
+                                #aec6cf 7.64647px 4.74674px 0px,
+                                #aec6cf 7.07299px 5.56533px 0px,
+                                #aec6cf 6.41227px 6.31528px 0px,
+                                #aec6cf 5.67248px 6.98735px 0px,
+                                #aec6cf 4.86272px 7.57324px 0px,
+                                #aec6cf 3.99299px 8.06573px 0px,
+                                #aec6cf 3.07402px 8.45875px 0px,
+                                #aec6cf 2.11714px 8.74744px 0px,
+                                #aec6cf 1.13414px 8.92825px 0px,
+                                #aec6cf 0.137162px 8.99895px 0px,
+                                #aec6cf -0.861512px 8.95867px 0px,
+                                #aec6cf -1.84956px 8.8079px 0px,
+                                #aec6cf -2.8148px 8.5485px 0px,
+                                #aec6cf -3.74532px 8.18368px 0px,
+                                #aec6cf -4.62965px 7.71792px 0px,
+                                #aec6cf -5.45689px 7.15698px 0px,
+                                #aec6cf -6.21682px 6.50777px 0px,
+                                #aec6cf -6.90009px 5.77831px 0px,
+                                #aec6cf -7.49825px 4.97757px 0px,
+                                #aec6cf -8.00394px 4.11545px 0px,
+                                #aec6cf -8.41092px 3.20258px 0px,
+                                #aec6cf -8.71416px 2.2502px 0px,
+                                #aec6cf -8.90993px 1.27008px 0px,
+                                #aec6cf -8.99582px 0.274291px 0px,
+                                #aec6cf -8.97076px -0.72488px 0px,
+                                #aec6cf -8.83507px -1.71511px 0px,
+                                #aec6cf -8.59041px -2.68419px 0px,
+                                #aec6cf -8.23981px -3.62017px 0px,
+                                #aec6cf -7.78758px -4.51149px 0px,
+                                #aec6cf -7.23931px -5.34718px 0px,
+                                #aec6cf -6.60176px -6.11692px 0px,
+                                #aec6cf -5.88279px -6.81122px 0px,
+                                #aec6cf -5.09127px -7.42152px 0px,
+                                #aec6cf -4.23696px -7.94029px 0px,
+                                #aec6cf -3.33039px -8.36113px 0px,
+                                #aec6cf -2.38275px -8.67885px 0px,
+                                #aec6cf -1.40572px -8.88954px 0px,
+                                #aec6cf -0.411357px -8.99059px 0px,
+                                #aec6cf 0.58808px -8.98077px 0px,
+                                #aec6cf 1.58026px -8.86018px 0px,
+                                #aec6cf 2.55296px -8.63032px 0px,
+                                #aec6cf 3.49417px -8.29402px 0px,
+                                #aec6cf 4.39229px -7.85543px 0px,
+                                #aec6cf 5.23623px -7.31996px 0px,
+                                #aec6cf 6.0156px -6.69422px 0px,
+                                #aec6cf 6.72078px -5.98591px 0px,
+                                #aec6cf 7.34307px -5.20378px 0px,
+                                #aec6cf 7.87479px -4.35748px 0px,
+                                #aec6cf 8.3094px -3.45743px 0px,
+                                #aec6cf 8.64153px -2.51474px 0px,
+                                #aec6cf 8.86709px -1.54104px 0px,
+                                #aec6cf 8.98328px -0.548328px 0px;
+                        }
+
+                        &.active {
+                            .title-bg {
+                                display: block;
+                            }
+
+                            .title-shadow {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    &-content {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 28px;
+                        letter-spacing: 0.25px;
+                        color: #000000;
+                        margin: 24px 0;
+
+                        @include Responsive(SM) {
+                            font-size: 14px;
+                            line-height: 140%;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+            .companion-image {
+                width: 50%;
+                margin-left: 87px;
+
+                @include Responsive(SM) {
+                    width: calc(100% - 20px);
+                    margin-left: 0;
+                }
+                .box-image {
+                    position: relative;
+                    display: none;
+
+                    @include Responsive(SM) {
+                        width: max-content;
+                        margin: auto;
+                    }
+                    @media screen and(max-width: 650px) {
+                        width: unset;
+                        margin: unset;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                    .img-companion {
+                        text-align: center;
+                        @include Responsive(SM) {
+                            width: max-content;
+                        }
+                        @media screen and(max-width: 650px) {
+                            width: unset;
+                        }
+                        img {
+                            @include Responsive(SM) {
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .i1,
+                    .i2,
+                    .i3 {
+                        position: absolute;
+                        content: "";
+                    }
+
+                    .i1 {
+                        @include Responsive(LG) {
+                            width: 10vw;
+                        }
+                        @include Responsive(SM) {
+                            width: unset;
+                        }
+                        img {
+                            @include Responsive(X48) {
+                                width: 55.38px;
+                            }
+                        }
+                    }
+                    .i2 {
+                        @include Responsive(LG) {
+                            width: 7vw;
+                        }
+                        @include Responsive(SM) {
+                            width: unset;
+                        }
+                        img {
+                            @include Responsive(X48) {
+                                width: 55.64px;
+                            }
+                        }
+                    }
+                    .i3 {
+                        @include Responsive(LG) {
+                            width: 5vw;
+                        }
+                        @include Responsive(SM) {
+                            width: unset;
+                        }
+                        img {
+                            @include Responsive(X48) {
+                                width: 40.96px;
+                            }
+                        }
+                    }
+
+                    &.box1 {
+                        .i1 {
+                            bottom: 25px;
+                            left: -45px;
+                            @media screen and (max-width: 650px) {
+                                left: -30px;
+                            }
+                            @include Responsive(X48) {
+                                left: -25px;
+                            }
+                        }
+                        .i2 {
+                            top: -5px;
+                            left: 55px;
+                            @include Responsive(SM) {
+                                top: 20px;
+                            }
+                            @include Responsive(XS) {
+                                top: -3px;
+                            }
+                            @include Responsive(X48) {
+                                top: 7px;
+                                left: 18px;
+                            }
+                        }
+                        .i3 {
+                            top: 60px;
+                            right: 0px;
+                            @include Responsive(SM) {
+                                right: 10px;
+                            }
+                            @include Responsive(X48) {
+                                top: 80px;
+                                right: -15px;
+                            }
+                        }
+                    }
+
+                    &.box2 {
+                        .i1 {
+                            top: 0px;
+                            left: 30px;
+                            @include Responsive(SM) {
+                                top: 15px;
+                                left: 18px;
+                            }
+                            @include Responsive(XS) {
+                                left: -12px;
+                            }
+                            @include Responsive(X48) {
+                                top: 22px;
+                                left: 0px;
+                            }
+                        }
+                        .i2 {
+                            top: -15px;
+                            right: 100px;
+                            @include Responsive(SM) {
+                                top: -2px;
+                                right: 78px;
+                            }
+                            @include Responsive(X48) {
+                                top: 0px;
+                                right: 33px;
+                            }
+                        }
+                        .i3 {
+                            bottom: 70px;
+                            right: -30px;
+                            @include Responsive(LG) {
+                                right: -15px;
+                            }
+                            @include Responsive(SM) {
+                                right: -25px;
+                            }
+                            @include Responsive(X48) {
+                                bottom: 30px;
+                                right: -15px;
+                            }
+                        }
+                    }
+                    &.box3 {
+                        .i1 {
+                            top: -30px;
+                            right: 75px;
+                            transform: rotate(60deg);
+                            @include Responsive(SM) {
+                                top: -17px;
+                                right: 63px;
+                            }
+                            @media screen and (max-width: 650px) {
+                                top: -10px;
+                                right: 70px;
+                            }
+                            @include Responsive(XS) {
+                                top: -19px;
+                                right: 46px;
+                            }
+                            @include Responsive(X48) {
+                                top: 4px;
+                                right: 21px;
+                            }
+                        }
+                        .i2 {
+                            bottom: 95px;
+                            right: -40px;
+                            @include Responsive(LG) {
+                                right: -15px;
+                            }
+                            @include Responsive(SM) {
+                                bottom: 110px;
+                                right: -43px;
+                            }
+                            @media screen and (max-width: 650px) {
+                                right: -6px;
+                            }
+                            @include Responsive(XS) {
+                                right: -18px;
+                            }
+                            @include Responsive(X48) {
+                                bottom: 75px;
+                                right: -15px;
+                            }
+                        }
+                        .i3 {
+                            top: 95px;
+                            left: 0px;
+                            @include Responsive(LG) {
+                                top: 70px;
+                            }
+                            @include Responsive(SM) {
+                                top: 92px;
+                                left: 13px;
+                            }
+                            @media screen and (max-width: 650px) {
+                                left: 28px;
+                            }
+                            @include Responsive(XS) {
+                                left: 0;
+                            }
+                            @include Responsive(X48) {
+                                top: 52px;
+                                left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skill-land {
+    background-color: $color_blue_5;
+    position: relative;
+    margin-top: -1px;
+    background-image: url(../images/summer/bgrtesti.png);
+    background-repeat: no-repeat;
+    @include Responsive(SM) {
+        background-image: none;
+    }
+    &-main {
+        padding: 108px 0 80px;
+        position: relative;
+        z-index: 1;
+        @include Responsive(SM) {
+            padding-bottom: 35px;
+        }
+        .box-title-main {
+            margin-bottom: 72px;
+            @include Responsive(SM) {
+                padding: 0 32px;
+                margin-bottom: 16px;
+            }
+
+            .title-main {
+                font-size: 48px;
+                line-height: 54px;
+                @include Responsive(SM) {
+                    font-size: 30px;
+                    line-height: 120%;
+                }
+            }
+        }
+
+        &-items {
+            display: flex;
+            width: calc(100% - 100px);
+            max-width: 912px;
+            column-gap: 39px;
+            margin: auto;
+            @include Responsive(MD) {
+                column-gap: 15px;
+            }
+            @media screen and(max-width:900px) {
+                width: calc(100% - 30px);
+            }
+            @include Responsive(SM) {
+                flex-direction: column;
+                width: calc(100% - 100px);
+                max-width: 278px;
+                min-width: 278px;
+                row-gap: 52px;
+            }
+            @media screen and(max-width: 300px) {
+                width: 100%;
+                max-width: unset;
+                min-width: unset;
+                padding: 0 15px;
+            }
+            .skill-item {
+                flex-basis: 100%;
+                text-align: center;
+
+                &-img {
+                    position: relative;
+                    cursor: pointer;
+                    .img-content {
+                        display: none;
+                    }
+                    .skill-item-content {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        padding: 35px 20px 30px 20px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 140%;
+                        text-align: center;
+                        letter-spacing: 0.25px;
+                        color: #ffffff;
+                        @include Responsive(MD) {
+                            padding: 20px 15px;
+                        }
+                        @media screen and(max-width:900px) {
+                            font-size: 13px;
+                            padding: 35px 20px 30px 20px;
+                        }
+                        @media screen and(max-width:830px) {
+                            padding: 20px 15px;
+                        }
+                        @include Responsive(SM) {
+                            font-size: 14px;
+                            padding: 35px 20px 30px 20px;
+                        }
+                        p {
+                            margin-top: 0;
+                            margin-bottom: 16px;
+                            @include Responsive(MD) {
+                                margin-bottom: 12px;
+                            }
+                            @media screen and(max-width:900px) {
+                                margin-bottom: 16px;
+                            }
+                            @media screen and(max-width:830px) {
+                                margin-bottom: 12px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .img-skill {
+                            display: none;
+                        }
+
+                        .img-content {
+                            display: block;
+                        }
+
+                        .skill-item-content {
+                            display: block;
+                        }
+                    }
+                }
+
+                &-title {
+                    margin-top: 24px;
+                    position: relative;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 120%;
+                    color: #fff;
+                    z-index: 0;
+                    @include Responsive(SM) {
+                        margin-top: 16px;
+                    }
+                    .title-bg {
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        color: rgb(235, 156, 195);
+                        text-shadow: rgb(235, 156, 195) 9px 0px 0px,
+                            rgb(235, 156, 195) 8.9445px 0.997944px 0px,
+                            rgb(235, 156, 195) 8.77869px 1.98358px 0px,
+                            rgb(235, 156, 195) 8.50461px 2.94475px 0px,
+                            rgb(235, 156, 195) 8.12565px 3.86961px 0px,
+                            rgb(235, 156, 195) 7.64647px 4.74674px 0px,
+                            rgb(235, 156, 195) 7.07299px 5.56533px 0px,
+                            rgb(235, 156, 195) 6.41227px 6.31528px 0px,
+                            rgb(235, 156, 195) 5.67248px 6.98735px 0px,
+                            rgb(235, 156, 195) 4.86272px 7.57324px 0px,
+                            rgb(235, 156, 195) 3.99299px 8.06573px 0px,
+                            rgb(235, 156, 195) 3.07402px 8.45875px 0px,
+                            rgb(235, 156, 195) 2.11714px 8.74744px 0px,
+                            rgb(235, 156, 195) 1.13414px 8.92825px 0px,
+                            rgb(235, 156, 195) 0.137162px 8.99895px 0px,
+                            rgb(235, 156, 195) -0.861512px 8.95867px 0px,
+                            rgb(235, 156, 195) -1.84956px 8.8079px 0px,
+                            rgb(235, 156, 195) -2.8148px 8.5485px 0px,
+                            rgb(235, 156, 195) -3.74532px 8.18368px 0px,
+                            rgb(235, 156, 195) -4.62965px 7.71792px 0px,
+                            rgb(235, 156, 195) -5.45689px 7.15698px 0px,
+                            rgb(235, 156, 195) -6.21682px 6.50777px 0px,
+                            rgb(235, 156, 195) -6.90009px 5.77831px 0px,
+                            rgb(235, 156, 195) -7.49825px 4.97757px 0px,
+                            rgb(235, 156, 195) -8.00394px 4.11545px 0px,
+                            rgb(235, 156, 195) -8.41092px 3.20258px 0px,
+                            rgb(235, 156, 195) -8.71416px 2.2502px 0px,
+                            rgb(235, 156, 195) -8.90993px 1.27008px 0px,
+                            rgb(235, 156, 195) -8.99582px 0.274291px 0px,
+                            rgb(235, 156, 195) -8.97076px -0.72488px 0px,
+                            rgb(235, 156, 195) -8.83507px -1.71511px 0px,
+                            rgb(235, 156, 195) -8.59041px -2.68419px 0px,
+                            rgb(235, 156, 195) -8.23981px -3.62017px 0px,
+                            rgb(235, 156, 195) -7.78758px -4.51149px 0px,
+                            rgb(235, 156, 195) -7.23931px -5.34718px 0px,
+                            rgb(235, 156, 195) -6.60176px -6.11692px 0px,
+                            rgb(235, 156, 195) -5.88279px -6.81122px 0px,
+                            rgb(235, 156, 195) -5.09127px -7.42152px 0px,
+                            rgb(235, 156, 195) -4.23696px -7.94029px 0px,
+                            rgb(235, 156, 195) -3.33039px -8.36113px 0px,
+                            rgb(235, 156, 195) -2.38275px -8.67885px 0px,
+                            rgb(235, 156, 195) -1.40572px -8.88954px 0px,
+                            rgb(235, 156, 195) -0.411357px -8.99059px 0px,
+                            rgb(235, 156, 195) 0.58808px -8.98077px 0px,
+                            rgb(235, 156, 195) 1.58026px -8.86018px 0px,
+                            rgb(235, 156, 195) 2.55296px -8.63032px 0px,
+                            rgb(235, 156, 195) 3.49417px -8.29402px 0px,
+                            rgb(235, 156, 195) 4.39229px -7.85543px 0px,
+                            rgb(235, 156, 195) 5.23623px -7.31996px 0px,
+                            rgb(235, 156, 195) 6.0156px -6.69422px 0px,
+                            rgb(235, 156, 195) 6.72078px -5.98591px 0px,
+                            rgb(235, 156, 195) 7.34307px -5.20378px 0px,
+                            rgb(235, 156, 195) 7.87479px -4.35748px 0px,
+                            rgb(235, 156, 195) 8.3094px -3.45743px 0px,
+                            rgb(235, 156, 195) 8.64153px -2.51474px 0px,
+                            rgb(235, 156, 195) 8.86709px -1.54104px 0px,
+                            rgb(235, 156, 195) 8.98328px -0.548328px 0px;
+                    }
+                    .title-shadow {
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        z-index: -2;
+                        width: 100%;
+                        color: #aec6cf;
+                        text-shadow: #aec6cf 9px 0px 0px,
+                            #aec6cf 8.9445px 0.997944px 0px,
+                            #aec6cf 8.77869px 1.98358px 0px,
+                            #aec6cf 8.50461px 2.94475px 0px,
+                            #aec6cf 8.12565px 3.86961px 0px,
+                            #aec6cf 7.64647px 4.74674px 0px,
+                            #aec6cf 7.07299px 5.56533px 0px,
+                            #aec6cf 6.41227px 6.31528px 0px,
+                            #aec6cf 5.67248px 6.98735px 0px,
+                            #aec6cf 4.86272px 7.57324px 0px,
+                            #aec6cf 3.99299px 8.06573px 0px,
+                            #aec6cf 3.07402px 8.45875px 0px,
+                            #aec6cf 2.11714px 8.74744px 0px,
+                            #aec6cf 1.13414px 8.92825px 0px,
+                            #aec6cf 0.137162px 8.99895px 0px,
+                            #aec6cf -0.861512px 8.95867px 0px,
+                            #aec6cf -1.84956px 8.8079px 0px,
+                            #aec6cf -2.8148px 8.5485px 0px,
+                            #aec6cf -3.74532px 8.18368px 0px,
+                            #aec6cf -4.62965px 7.71792px 0px,
+                            #aec6cf -5.45689px 7.15698px 0px,
+                            #aec6cf -6.21682px 6.50777px 0px,
+                            #aec6cf -6.90009px 5.77831px 0px,
+                            #aec6cf -7.49825px 4.97757px 0px,
+                            #aec6cf -8.00394px 4.11545px 0px,
+                            #aec6cf -8.41092px 3.20258px 0px,
+                            #aec6cf -8.71416px 2.2502px 0px,
+                            #aec6cf -8.90993px 1.27008px 0px,
+                            #aec6cf -8.99582px 0.274291px 0px,
+                            #aec6cf -8.97076px -0.72488px 0px,
+                            #aec6cf -8.83507px -1.71511px 0px,
+                            #aec6cf -8.59041px -2.68419px 0px,
+                            #aec6cf -8.23981px -3.62017px 0px,
+                            #aec6cf -7.78758px -4.51149px 0px,
+                            #aec6cf -7.23931px -5.34718px 0px,
+                            #aec6cf -6.60176px -6.11692px 0px,
+                            #aec6cf -5.88279px -6.81122px 0px,
+                            #aec6cf -5.09127px -7.42152px 0px,
+                            #aec6cf -4.23696px -7.94029px 0px,
+                            #aec6cf -3.33039px -8.36113px 0px,
+                            #aec6cf -2.38275px -8.67885px 0px,
+                            #aec6cf -1.40572px -8.88954px 0px,
+                            #aec6cf -0.411357px -8.99059px 0px,
+                            #aec6cf 0.58808px -8.98077px 0px,
+                            #aec6cf 1.58026px -8.86018px 0px,
+                            #aec6cf 2.55296px -8.63032px 0px,
+                            #aec6cf 3.49417px -8.29402px 0px,
+                            #aec6cf 4.39229px -7.85543px 0px,
+                            #aec6cf 5.23623px -7.31996px 0px,
+                            #aec6cf 6.0156px -6.69422px 0px,
+                            #aec6cf 6.72078px -5.98591px 0px,
+                            #aec6cf 7.34307px -5.20378px 0px,
+                            #aec6cf 7.87479px -4.35748px 0px,
+                            #aec6cf 8.3094px -3.45743px 0px,
+                            #aec6cf 8.64153px -2.51474px 0px,
+                            #aec6cf 8.86709px -1.54104px 0px,
+                            #aec6cf 8.98328px -0.548328px 0px;
+                    }
+                }
+            }
+        }
+
+        .skill-btn {
+            height: 56px;
+            width: 284px;
+            background-color: $color_yellow_2;
+            box-shadow: 4px 4px 0px rgba(69, 90, 100, 0.5);
+            border-radius: 100px;
+            margin: 82px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            @include Responsive(SM) {
+                margin-top: 52px;
+            }
+            @include Responsive(XS) {
+                width: 211px;
+                height: 40px;
+            }
+            a {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 120%;
+                color: $color_blue;
+                text-decoration: none;
+                @include Responsive(XS) {
+                    font-size: 20px;
+                    line-height: 140%;
+                    letter-spacing: 0.15px;
+                }
+            }
+        }
+    }
+}
+
+.modal.modal-register-event.modal-register-course {
+    .modal-dialog {
+        max-width: 576px;
+        @include Responsive(XS) {
+            max-width: calc(100% - 32px);
+        }
+    }
+
+    form {
+        min-width: 576px;
+        @include Responsive(XS) {
+            min-width: calc(100% - 32px);
+        }
+        .input-group small {
+            color: #f3392f;
+            position: relative;
+            top: 8px;
+            left: 16px;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.25px;
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
